@@ -7,7 +7,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/08c2eb7d5e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>MS2-Test</title>
+    <title>MS2-Quiz</title>
 </head>
 <body>
 
@@ -87,7 +87,12 @@
             </div>
 
             <button aria-label="button shows game high scores"data-type="high" id="highscore-btn" class="highscore-btn btn">High Scores</button>
-
+            <div id="high-container" class="high-container hide">
+                <div id="highScores" class="flex-center flex-column">
+                    <h1 id="finalScore">High Scores</h1>
+                    <ul id="highScoresList"></ul>
+                </div>
+            </div>
         </div>
 
 

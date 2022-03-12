@@ -2,11 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MS2-Quiz</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
 </head>
 <body>
+
+    <!--heading-->
+    <h1 class="heading">Quiz</h1>
+
+    <div class="game-area">
+        <div class="container">
+            <div id="end-container" class="flex-center flex-column">
+                <h1 id="finalScore">0</h1>
+                <form class="end-form-container">
+                    <h2 id="end-text">Enter your name below to save your score!</h2>
+                    <input aria-label="input for player name" type="text" name="name" id="username" placeholder="Enter your name">
+                    <button aria-label="button saves player score" class="btn" id="saveScoreBtn" type="submit" onclick="saveHighScore(event)" disabled>Save</button>
+                </form>
+                <button aria-label="button goes to game home page" data-type="home" id="home-btn" class="home-btn btn">Home</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/end.js"></script>
     
 </body>
 </html>
