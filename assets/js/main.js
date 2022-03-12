@@ -168,4 +168,100 @@ incrementScore = num => {
 
 
 
+// https://sebhastian.com/javascript-show-hide-div-onclick-toggle/ then tweaked to serve my game
+// const targetDiv = document.getElementById("third");
+// const btn = document.getElementById("toggle");
+
+//this function works. it expands and shows high scores, but keeps all other sections of page.
+// highscoresButton.onclick = function () {
+//     if (highscoresDiv.style.display !== "block") {
+//         highscoresDiv.style.display = "block";
+//     } else {
+//         highscoresDiv.style.display = "none";
+//     }
+// };
+
+
+//experimental attempt to hide all others and just show highscore
+//improve js, maybe add hide all for reocurring stuff e.g. hide all start/howTo+contact
+//might need to do the same for the How to Play button
+highscoresButton.onclick = function () {
+    if (highscoresDiv.style.display !== "block") {
+        highscoresDiv.style.display = "block";
+        startButton.classList.add('hide');
+        howToButton.classList.add('hide');
+        // howToDiv.classList.add('hide');
+        contactButton.classList.add('hide');
+    } else {
+        highscoresDiv.style.display = "none";
+        startButton.classList.remove('hide');
+        howToButton.classList.remove('hide');
+        // howToDiv.classList.remove('hide');
+        contactButton.classList.remove('hide');
+    }
+};
+
+// trying this way, https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
+// function myFunction() {
+//     var x = document.getElementById("high-container");
+//     if (x.style.display === "none") {
+//       x.style.display = "block";
+//     } else {
+//       x.style.display = "none";
+//     }
+//   }
+
+
+
+//for the how to play popup
+
+//this function works. it expands and shows instructions on how to play, but keeps all other sections of page.
+// howToButton.onclick = function () {
+//     if (howToDiv.style.display !== "block") {
+//         howToDiv.style.display = "block";
+//     } else {
+//         howToDiv.style.display = "none";
+//     }
+// };
+
+//same thing but for Hot To Play section
+howToButton.onclick = function () {
+    if (howToDiv.style.display !== "block") {
+        howToDiv.style.display = "block";
+        startButton.classList.add('hide');
+        contactButton.classList.add('hide');
+        highscoresButton.classList.add('hide');
+        // hideContent();
+        // howToButton.classList.remove('hide');
+    } else {
+        howToDiv.style.display = "none";
+        startButton.classList.remove('hide');
+        contactButton.classList.remove('hide');
+        highscoresButton.classList.remove('hide');
+    }
+};
+
+//same thing but for Contact section
+contactButton.onclick = function () {
+    if (contactDiv.style.display !== "block") {
+        contactDiv.style.display = "block";
+        startButton.classList.add('hide');
+        howToButton.classList.add('hide');
+        highscoresButton.classList.add('hide');
+        // hideContent();
+        // howToButton.classList.remove('hide');
+    } else {
+        contactDiv.style.display = "none";
+        startButton.classList.remove('hide');
+        howToButton.classList.remove('hide');
+        highscoresButton.classList.remove('hide');
+    }
+};
+
+
+
+
+
+
+
 
