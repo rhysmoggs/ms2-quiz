@@ -63,6 +63,7 @@ h2 {
     padding: 25px 0;
 }
 
+/*these are containers/buttons the answers will populate*/
 .choice-container {
     background-color: rgb(255,210,0);
     display: flex;
@@ -74,6 +75,13 @@ h2 {
     text-transform: uppercase;
     text-align: center;
     border: 1px solid;
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(187,148,133, 0.6);
+    transform: scale(1.02);
+    transform: transform 100ms;
 }
 
 .controls-area {
@@ -109,6 +117,20 @@ h2 {
     cursor: not-allowed;
     box-shadow: none;
     transform: none;
+}
+
+.correct {
+    background: linear-gradient(32deg, rgba(11, 223, 36) 0%, rgb(41, 232, 111) 100%);
+}
+
+.incorrect {
+    background: linear-gradient(32deg, rgba(230, 29, 29, 1) 0%, rgb(224, 11, 11, 1) 100%);
+}
+
+/* style by BrainCodex, changed to suit my game*/
+#highscore-btn:hover {
+    background: linear-gradient(90deg, rgb(255, 247, 9) 0%, rgb(240, 221, 6) 100%);
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(255,255,0,0.5);
 }
 
 /* HUD */
@@ -186,6 +208,13 @@ h2 {
 }
 
 /*end.html*/
+
+#score, #finalScore {
+    color: rgb(255,210,0);
+    text-shadow: -1.5px 1px 1px rgb(0 19 120);
+    font-weight: bold;
+    letter-spacing: 0.5rem;
+}
 
 .end-form-container {
     width: 100%;
