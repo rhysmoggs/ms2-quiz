@@ -11,7 +11,9 @@
 </head>
 <body>
 
+    <!--heading-->
     <h1 class="heading">Quiz</h1>
+
 
     <!--used following link as template then adjusted to my game. Reference this in README.md-->
     <!--How to Make a Quiz App using HTML CSS Javascript - Vanilla Javascript Project for Beginners Tutorial-->
@@ -52,6 +54,27 @@
                 </div>
             </div>
         </div>
+
+
+        <!--controls area-->
+        <div class="controls-area">
+            <button aria-label="button starts the game" data-type="start" id="start-btn" class="start-btn btn">Start</button>
+            <button aria-label="button shows how to play game" data-type="how" id="how-to-btn" class="how-to-btn btn">How to Play</button>
+
+            <div id="how-container" class="how-container hide">
+                <div id="howTo">
+                    <p>A simple quiz format.</p>
+                    <p>Click the START button and answer the questions!</p>
+                </div>
+            </div>
+
+            <button aria-label="button shows how to contact game creators" data-type="contact" id="contact-btn" class="contact-btn btn">Contact</button>
+
+            <button aria-label="button shows game high scores"data-type="high" id="highscore-btn" class="highscore-btn btn">High Scores</button>
+
+        </div>
+
+
     </div>
 
     <script src="assets/js/main.js"></script>

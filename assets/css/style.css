@@ -72,6 +72,13 @@ h2 {
     border: 1px solid;
 }
 
+.controls-area {
+    width: 85%;
+    margin: 0px auto;
+    display: grid;
+    justify-content: center;
+}
+
 /* .hide {
     display: none;
 } */
