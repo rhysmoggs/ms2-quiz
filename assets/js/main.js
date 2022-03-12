@@ -45,11 +45,38 @@ let score = 0
 let questionCounter = 0
 let availableQuestions = []
 
+/*list of questions*/
+let questions = [
+    {
+        question: 'What is the largest country in South America?',
+        choice1: 'Paraguay',
+        choice2: 'Colombia',
+        choice3: 'Suriname',
+        choice4: 'Brazil',
+        answer: 4,
+    },
+    {
+        question: "How many countries border Austria?",
+        choice1: "2",
+        choice2: "8",
+        choice3: "1",
+        choice4: "5",
+        answer: 2,
+    },
+    {
+        question: "What is the capital city of Canada?",
+        choice1: "Quebec City",
+        choice2: "Toronto",
+        choice3: "Ottawa",
+        choice4: "Vancouver",
+        answer: 3,
+    }
+]
+
 const SCORE_POINTS = 5000
 const MAX_QUESTIONS = 4
 
-/*event listener set to the start button that runs the game*/
-startButton.addEventListener("click", startGame);
+
 
 /*start the game*/
 startGame = () => {
@@ -73,6 +100,9 @@ startGame = () => {
         highscoresButton.style.display = "none";
     };
 };
+
+/*event listener set to the start button that runs the game*/
+startButton.addEventListener("click", startGame);
 
 /*generates next question, if max questions reached, redirects to end.html*/
 getNewQuestion = () => {
@@ -99,3 +129,43 @@ getNewQuestion = () => {
 
     acceptingAnswers = true
 }
+
+/*check if the answer is correct/incorrect call it checkAnswer instead?*/
+choices.forEach(choice => {
+    choice.addEventListener('click', e => {
+        if(!acceptingAnswers) return
+
+        acceptingAnswers = false
+        const selectedChoice = e.target
+        const selectedAnswer = selectedChoice.dataset['number']
+
+        let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'
+
+        if(classToApply === 'correct') {
+            incrementScore(SCORE_POINTS)
+        }
+
+        selectedChoice.parentElement.classList.add(classToApply)
+
+        setTimeout(() => {
+            selectedChoice.parentElement.classList.remove(classToApply)
+            getNewQuestion()
+
+        }, 2000)
+    })
+})
+
+/*increment score for each correct answer*/
+incrementScore = num => {
+    score +=num
+    scoreText.innerText = score
+}
+
+
+
+
+
+
+
+
+
