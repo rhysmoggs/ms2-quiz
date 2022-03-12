@@ -140,3 +140,18 @@ h2 {
     justify-content: center;
     align-items: center;
 }
+
+/*lists*/
+
+.contact-list {
+    list-style-type: none;
+    display: flex;
+    letter-spacing: 3.5rem;
+    justify-content: center;
+    /*need to clean up auto margin from lit-style/padding*/
+}
+
+.contact-list i {
+    color: black;
+    font-size: 2.5rem;
+}
