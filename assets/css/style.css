@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+     font-family: 'Poppins', sans-serif;
+    background-size: auto;
+    background-color: black;
+    text-align: center;
+}
+
+.heading {
+    margin: 2.5rem auto;
+    color: #E6ECF0;
+}
+
+.game-area {
+    background-color: #E6ECF0;
+    border-radius: 6px;
+    box-sizing: border-box;
+    width: 85%;
+    height: auto;
+    max-width: 830px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    /*centres game-area perfectly, tweak overlapping/hiding content (heading, maybe more stuff?)*/
+    /*toggle this on/off and tweak above margins if necessary*/
+    /* https://stackoverflow.com/questions/42121150/css-centering-with-transform */
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+}
+
+.choice-container {
+    background-color: rgb(255,210,0);
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    width: 50%;
+    border-radius: 6px;
+    min-width: 30%;
+    text-transform: uppercase;
+    text-align: center;
+    border: 1px solid;
+}
