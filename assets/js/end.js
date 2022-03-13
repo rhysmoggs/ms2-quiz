@@ -10,11 +10,17 @@ const homeButton = document.getElementById('home-btn');
 
 const highScores = JSON.parse(localStorage.getItem('highScores')) || []
 
+
+
 // maximum number of saved usernames and scores listed on High Scores list
 const MAX_HIGH_SCORES = 5
 
+
+
 // display user's final score on end screen
 finalScore.innerText = mostRecentScore + ' Air Miles'
+
+
 
 // 
 username.addEventListener('keyup', () => {
@@ -41,6 +47,8 @@ saveHighScore = e => {
     localStorage.setItem('highScores', JSON.stringify(highScores))
     window.location.assign('/')
 }
+
+
 
 /*event listener set to the home button*/
 homeButton.addEventListener("click", goHome);

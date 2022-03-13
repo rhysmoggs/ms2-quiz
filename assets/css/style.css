@@ -15,7 +15,7 @@ body {
     text-align: center;
 }
 
-/* headings and text */
+/* headings, logo and text */
 
 .heading {
     margin: 2.5rem auto;
@@ -30,6 +30,12 @@ h1 {
 h2 {
     font-size: 1.8rem;;
     margin-bottom: 2rem;
+}
+
+.logo {
+    height: 80px;
+    padding-right: 5px;
+    vertical-align: middle;
 }
 
 .choice-text {
