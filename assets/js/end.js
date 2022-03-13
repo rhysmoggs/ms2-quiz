@@ -41,3 +41,11 @@ saveHighScore = e => {
     localStorage.setItem('highScores', JSON.stringify(highScores))
     window.location.assign('/')
 }
+
+/*event listener set to the home button*/
+homeButton.addEventListener("click", goHome);
+
+/*goes to home page*/
+function goHome() {
+    window.location.assign('/');
+}
