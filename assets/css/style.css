@@ -27,6 +27,16 @@ h1 {
     font-size: 2.5rem;
 }
 
+span {
+    text-align: center;
+    font-size: 1.2rem;
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    top: 12%;
+    background: black;
+}
+
 h2 {
     font-size: 1.8rem;;
     margin-bottom: 2rem;
