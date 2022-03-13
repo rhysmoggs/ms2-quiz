@@ -31,6 +31,9 @@ const contactDiv = document.getElementById('contact-container');
 
 const highscoresButton = document.getElementById('highscore-btn');
 const highscoresDiv = document.getElementById('high-container');
+const highScoresList = document.querySelector('#highScoresList')
+const highScores = JSON.parse(localStorage.getItem("highScores")) || []
+
 const endDiv = document.getElementById('end-container');
 
 const question = document.querySelector('#question');
@@ -78,7 +81,12 @@ let questions = [
 const SCORE_POINTS = 5000
 const MAX_QUESTIONS = 4
 
+/*event listener set to the logo button that reloads the home page*/
+logoReload.addEventListener("click", reloadGame);
 
+function reloadGame() {
+    window.location.replace("../index.html");
+}
 
 /*start the game*/
 startGame = () => {
@@ -102,13 +110,6 @@ startGame = () => {
         highscoresButton.style.display = "none";
     };
 };
-
-/*event listener set to the logo button that reloads the home page*/
-logoReload.addEventListener("click", reloadGame);
-
-function reloadGame() {
-    window.location.replace("../index.html");
-}
 
 /*event listener set to the start button that runs the game*/
 startButton.addEventListener("click", startGame);
@@ -170,11 +171,17 @@ incrementScore = num => {
     scoreText.innerText = score
 }
 
+// working - list to add score to highscore list
+// highScoresList.innerHTML =
+// highScores.map(score => {
+//     return `<li class="high-score">${score.name} - ${score.score}</li>`
+// }).join("")
 
-
-
-
-
+//experimental
+highScoresList.innerHTML =
+highScores.map(score => {
+    return `<p class="high-score">${score.name} - ${score.score} Air Miles</p>`
+}).join("")
 
 
 // https://sebhastian.com/javascript-show-hide-div-onclick-toggle/ then tweaked to serve my game

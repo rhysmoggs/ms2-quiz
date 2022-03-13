@@ -1,10 +1,12 @@
 // list of variables
-const username = document.querySelector('#username')
+const logoReload = document.getElementById('logo');
 
-const saveScoreBtn = document.querySelector('#saveScoreBtn')
+const username = document.querySelector('#username');
 
-const finalScore = document.querySelector('#finalScore')
-const mostRecentScore = localStorage.getItem('mostRecentScore')
+const saveScoreBtn = document.querySelector('#saveScoreBtn');
+
+const finalScore = document.querySelector('#finalScore');
+const mostRecentScore = localStorage.getItem('mostRecentScore');
 
 const homeButton = document.getElementById('home-btn');
 
@@ -18,7 +20,7 @@ const MAX_HIGH_SCORES = 5
 
 
 // display user's final score on end screen
-finalScore.innerText = mostRecentScore + ' Air Miles'
+finalScore.innerText = mostRecentScore + ' Air Miles';
 
 
 
@@ -48,12 +50,17 @@ saveHighScore = e => {
     window.location.assign('/')
 }
 
-
-
 /*event listener set to the home button*/
 homeButton.addEventListener("click", goHome);
 
 /*goes to home page*/
 function goHome() {
     window.location.assign('/');
+}
+
+/*event listener set to the logo button that reloads the home page*/
+logoReload.addEventListener("click", reloadGame);
+
+function reloadGame() {
+    window.location.replace("../index.html");
 }
