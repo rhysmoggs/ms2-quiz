@@ -7,7 +7,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/08c2eb7d5e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>MS2-Quiz</title>
+    <title>Globe Trotter Quiz</title>
 </head>
 <body>
 
@@ -18,7 +18,7 @@
     <!--used following link as template then adjusted to my game. Reference this in README.md-->
     <!--How to Make a Quiz App using HTML CSS Javascript - Vanilla Javascript Project for Beginners Tutorial-->
     <!--https://www.youtube.com/watch?v=f4fB9Xg2JEY&list=FLoLMoJL7IfiYl8F3sN_CEqQ&index=10-->
-    <div class="game-area">
+    <div id="game-area" class="game-area">
         <div id="container" class="container hide">
             <div id="game" class="justify-center flex-column">
                 <div id="hud">
@@ -90,7 +90,7 @@
             <div id="high-container" class="high-container hide">
                 <div id="highScores" class="flex-center flex-column">
                     <!--shall I hide this h1 for cleaner look?-->
-                    <h1 id="finalScore">High Scores</h1>
+                    <!-- <h1 id="finalScore">High Scores</h1> -->
                     <ul id="highScoresList"></ul>
                 </div>
             </div>

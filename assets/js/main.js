@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
 // list of variables
 const logoReload = document.getElementById('logo');
 
-const gameDiv = document.getElementById('game');
+const gameArea = document.getElementById('game-area');
 const containerDiv = document.getElementById('container');
 
 const startButton = document.getElementById('start-btn');
@@ -208,12 +208,14 @@ highscoresButton.onclick = function () {
         howToButton.classList.add('hide');
         // howToDiv.classList.add('hide');
         contactButton.classList.add('hide');
+        gameArea.style.top = "55%";
     } else {
         highscoresDiv.style.display = "none";
         startButton.classList.remove('hide');
         howToButton.classList.remove('hide');
         // howToDiv.classList.remove('hide');
         contactButton.classList.remove('hide');
+        gameArea.style.top = "60%";
     }
 };
 
@@ -249,11 +251,13 @@ howToButton.onclick = function () {
         highscoresButton.classList.add('hide');
         // hideContent();
         // howToButton.classList.remove('hide');
+        gameArea.style.top = "55%";
     } else {
         howToDiv.style.display = "none";
         startButton.classList.remove('hide');
         contactButton.classList.remove('hide');
         highscoresButton.classList.remove('hide');
+        gameArea.style.top = "60%";
     }
 };
 
@@ -266,11 +270,13 @@ contactButton.onclick = function () {
         highscoresButton.classList.add('hide');
         // hideContent();
         // howToButton.classList.remove('hide');
+        gameArea.style.top = "55%";
     } else {
         contactDiv.style.display = "none";
         startButton.classList.remove('hide');
         howToButton.classList.remove('hide');
         highscoresButton.classList.remove('hide');
+        gameArea.style.top = "60%";
     }
 };
 
