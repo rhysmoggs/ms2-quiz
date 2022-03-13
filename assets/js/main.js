@@ -16,6 +16,8 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 // list of variables
+const logoReload = document.getElementById('logo');
+
 const gameDiv = document.getElementById('game');
 const containerDiv = document.getElementById('container');
 
@@ -100,6 +102,13 @@ startGame = () => {
         highscoresButton.style.display = "none";
     };
 };
+
+/*event listener set to the logo button that reloads the home page*/
+logoReload.addEventListener("click", reloadGame);
+
+function reloadGame() {
+    window.location.replace("../index.html");
+}
 
 /*event listener set to the start button that runs the game*/
 startButton.addEventListener("click", startGame);

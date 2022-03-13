@@ -33,9 +33,10 @@ h2 {
 }
 
 .logo {
-    height: 80px;
+    height: 160px;
     padding-right: 5px;
     vertical-align: middle;
+    border-radius: 50%;
 }
 
 .choice-text {
@@ -186,7 +187,11 @@ h2 {
     align-items: center;
 }
 
-/*contact / socials list*/
+.justify-center {
+    justify-content: center;
+}
+
+/*contact list*/
 
 .contact-list {
     list-style-type: none;
