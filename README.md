@@ -130,7 +130,7 @@ Wireframes were drawn using [Balsamiq](https://balsamiq.com/) at the beginning o
 
 - End Screen Wireframe
 
-<img src="wireframes/desktop-end.png">
+<img src="wireframes/mobile-end.png">
 
 #### Colour Palette
 - Equally as important in the baking industry - especially with decorative products, colour is vital for the design of this website.
