@@ -2,24 +2,28 @@
 
 [View the live project here.](https://rhysmoggs.github.io/ms2-quiz/)
 
-Here is the brand new launch for the quiz game, Globe Trotters Quiz.
+Here is the brand new launch for the geography quiz: Globe Trotter Quiz.
 
-This is the first game the company has launched, with hopes to announce itself to the world. Globe Trotters is a passion project, birthed from the creators love of travel and geography. Having been fortunate to travel the world, the creator still obsesses to be reminded and share that love of travel and adventure with a great audience, either like-minded travellers, keen quizzers, randomers or students. The company expects to increase brand awareness and attract more players. The game will clearly display information for new and returning customers including the creator's contact info via social media links. The website is fully responsible on a range of hand-held devices to larger screens. This is to ensure that as many eyes as possible can play the game and enjoy this journey.
+This is the first interactive quiz the company has launched, with hopes to announce itself to the world. Globe Trotter is a passion project, birthed from the creators love of travel and geography. Having been fortunate enough to travel the world, the creator still obsesses to be reminded and share that love of travel and adventure with a great audience, either like-minded travellers, keen quizzers, randomers or students. The creator expects to announce their project and attract more players. The quiz will clearly display information for new and returning customers including the creators contact info via social media links. The website is fully responsible on a range from hand-held devices to larger screens. This is to ensure that as many eyes as possible can play the quiz and enjoy this journey.
 
-The game is a simple geogrpahy/travel quiz, with questions focused on the players knowledge of this subject.
-The game generates 1 question a time, with 4 multiple choice options as answers.
-The player clicks on the buttons/answers and the game and a visual prompt is given via the colour change to signify the players selection was correct (green) or incorrect (red).
-The game automatically displayes the next question after a short delay.
+25,000 miles to travel around the globe. The user's goal is to collect as many Air Miles (each question giving ____Air Miles), eventally gathering enough to travel around the world.
+
+The quiz can be plaeyd by one person or as would like to partake. There are rumours of a more child-friendly version to follow with additions of sound and pictures and even theme changes.
+
+The quiz is a simple geogrpahy/travel quiz, with questions focused on the players knowledge of this subject.
+The quiz generates 1 question at a time, with 4 multiple choice options as answers.
+The player clicks on the buttons/answers and the quiz and a visual prompt is given via the colour change to signify the players selection was correct (green) or incorrect (red).
+The quiz automatically displayes the next question after a short delay.
 There are a total of 10 questions to answer.
-The end screen for the game gives the total amount of Air Miles amassed.
-A player can enter their name to save their high score to the game's database.
+The end screen for the quiz gives the total amount of Air Miles amassed.
+A player can enter their name to save their high score to the quiz's database.
 The player accumilates air miles as a scoring system, with each correct answer awarded 5000 miles.
 
 <h2 align="center"><img src="assets/readme-images/website.png"></h2>
 
 ## User Stories
 
-Following are the goals that the game should provide for each user.
+Following are the goals that the quiz should provide for each user.
 
 #### As a New User :
 * I want it to be very clear what the website's purpose is and what do they do.
@@ -27,11 +31,11 @@ Following are the goals that the game should provide for each user.
 * I want to easily find their social media links to find out more about the company, the way they conduct themselves and their interaction with customers.
 * I want to find reviews.
 * 
-* I want to to be able to access and play the game on the device I'm using.
+* I want to to be able to access and play quiz on the device I'm using.
 * I want to to be able to play with ease.
-* I want to to be able to understand the game immediately.
+* I want to to be able to understand the quiz immediately.
 * I want to to be able to access instructions if need be.
-* I want to to be able to contat the game developers if I wish to(??).
+* I want to to be able to contat the quiz developers if I wish to(??).
 * I want there to be plenty of variety.
 
 #### As a Returning User :
@@ -43,16 +47,16 @@ Following are the goals that the game should provide for each user.
 * I want there to be a Newsletter so that I am informed of any company related news.
 *
 * I want to be able to view the high score list.
-* I want to be able to save my score after a game.
-* I want to to be able to access and play the game on a range of devices/browsers.
-* I want to to be able to contat the game developers if I wish to(??).
+* I want to be able to save my score after the quiz.
+* I want to to be able to access and play the quiz on a range of devices/browsers.
+* I want to to be able to contat the quiz developers if I wish to(??).
 
 
 ## Design
-Once the user goals and the projects intentions were set out, the next step was to design the aesthetic aspects of the Globe Trotters game.
+Once the user goals and the projects intentions were set out, the next step was to design the aesthetic aspects of the Globe Trotter quiz.
 
 ### Wireframes
-Wireframes were drawn using [Balsamiq](https://balsamiq.com/) at the beginning of the project. They were referenced throughout the design and building of the hame. Following are a series of images showing the Globe Trotters game on the three main screen sizes: desktop, tablet and mobile. Every major section of the game is also included.
+Wireframes were drawn using [Balsamiq](https://balsamiq.com/) at the beginning of the project. They were referenced throughout the design and building of the quiz. Following are a series of images showing the Globe Trotter Quiz on the three main screen sizes: desktop, tablet and mobile. Every major section of the quiz is also included.
 
 #### Desktop
 
@@ -133,9 +137,9 @@ Wireframes were drawn using [Balsamiq](https://balsamiq.com/) at the beginning o
 <img src="wireframes/mobile-end.png">
 
 #### Colour Palette
-- Equally as important in the baking industry - especially with decorative products, colour is vital for the design of this website.
+- Colour is vital for the design of this quiz.
 
-- The primary colours used on the Bakes by Noémie website are ash gray (#ced4c6), puce (#c6878f) and white (#fff).
+- The primary colours used on the Globe Trotter Quiz are ash gray (#ced4c6), puce (#c6878f) and white (#fff).
 There is a hint of navy purple (#5b507a) found to better contrast the text with the hero image on the index.html home page.
 The text colour is predominantly a dark black (#000) to ensure a greater contrast between the mellow, pastel colour palette and background.
 There is some text content in white - especially when the background is a darker colour or shade.
@@ -327,12 +331,13 @@ Following are the Google Chrome Lighthouse results for each page.
 ### Further Testing
 
 -   Testing was predominantly made using Google Chrome's own developer tools and 'Inspect Mode', although testing was done sporadically on alternative browsers with each major addition to the website e.g. new content or responsive changes via keyframes.
--   The Website was tested on Google Chrome, Mozilla Firefox, Microsoft Edge and Opera browsers.
+-   All interactive elements of the quiz were tested. Clicking, hiding/showing content, user input, links and general flow of quiz. Bugs were fixed as they arose.
+-   The quiz was tested on Google Chrome, Mozilla Firefox, Microsoft Edge and Opera browsers and ran efficiently and consistently on each one. The quiz looked and operated as intended.
 -   The website was viewed on a variety of devices such as Desktop, Laptop, iPad & iPhoneX.
-
 -   I had feedback throughout from Noémie herself, who gave guidance and a critical eye throughout.
 
 ### Bug Fixes
+Bug fixes were predominantly completed in real-time as soon as issues arose. This was to ensure the project would continue developing smoothly without serious, unmanagable bugs arising later that could drastically reduce development time or the layout and feel of the quiz.
 
 -   As seen from the style.css file, there is a lot of custom css. I manually adjusted each screen size and the layout, often times changing the display from flex/flexbox to inline on smaller screens - then adjusting the width of the containers.
 -   There was an issue on the iPad where the navbar would push the white background and links down to cover the 'offer banner' below. This was due to my custom padding settings overriding bootstraps own classes. This was resolved by changing it's property to "width: max-content" on a media query from 768px and up.
