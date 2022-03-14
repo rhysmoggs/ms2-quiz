@@ -60,9 +60,13 @@ Wireframes were drawn using [Balsamiq](https://balsamiq.com/) at the beginning o
 
 <img src="wireframes/desktop-index.png">
 
+- Quiz Wireframe
+
+<img src="wireframes/desktop-quiz.png">
+
 - How To Play Wireframe
 
-<img src="wireframes/desktop-howto.png">
+<img src="wireframes/desktop-how-to.png">
 
 - Contact Wireframe
 
@@ -82,9 +86,13 @@ Wireframes were drawn using [Balsamiq](https://balsamiq.com/) at the beginning o
 
 <img src="wireframes/tablet-index.png">
 
+- Quiz Wireframe
+
+<img src="wireframes/tablet-quiz.png">
+
 - How To Play Wireframe
 
-<img src="wireframes/tablet-howto.png">
+<img src="wireframes/tablet-how-to.png">
 
 - Contact Wireframe
 
@@ -104,9 +112,13 @@ Wireframes were drawn using [Balsamiq](https://balsamiq.com/) at the beginning o
 
 <img src="wireframes/mobile-index.png">
 
+- Quiz Wireframe
+
+<img src="wireframes/mobile-quiz.png">
+
 - How To Play Wireframe
 
-<img src="wireframes/mobile-howto.png">
+<img src="wireframes/mobile-how-to.png">
 
 - Contact Wireframe
 
