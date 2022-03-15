@@ -4,7 +4,9 @@
 
 Here is the brand new launch for the geography quiz: Globe Trotter Quiz.
 
-This is the first interactive quiz the company has launched, with hopes to announce itself to the world. Globe Trotter is a passion project, birthed from the creators love of travel and geography. Having been fortunate enough to travel the world, the creator still obsesses to be reminded and share that love of travel and adventure with a great audience, either like-minded travellers, keen quizzers, randomers or students. The creator expects to announce their project and attract more players. The quiz will clearly display information for new and returning customers including the creators contact info via social media links. The website is fully responsible on a range from hand-held devices to larger screens. This is to ensure that as many eyes as possible can play the quiz and enjoy this journey.
+This is the first interactive quiz the company has launched, announcing themselves to the world. Globe Trotter is a passion project, birthed from the creators love of travel and adventure. Having been fortunate enough to travel the world, the creator still longs and obsesses over memories and places visited, and loves to to be reminded about all travel-related things. Moreso, the creator has a desire to share that love of travel and adventure with a greater audience: like-minded people or travellers, keen quizzers, families or students. The creator expects to announce their quiz and subsoquently attract more and more players from accross the world.
+
+The quiz will clearly display information for new and returning customers including the creators contact info via social media links. The website is fully responsible on a range from hand-held devices to larger screens. This is to ensure that as many eyes as possible can play the quiz and enjoy this journey.
 
 25,000 miles to travel around the globe. The user's goal is to collect as many Air Miles (each question giving ____Air Miles), eventally gathering enough to travel around the world.
 
@@ -223,7 +225,7 @@ As shown on the images below, the nav bar has a consistent and clean style. it i
 
 #### Buttons
 
-- ALmost every button is styled to look the same.
+- Almost every button is styled to look the same. A clean and clear button to make for user readabilty and speed, paramount to elite quizzing.
 
 <img src="assets/readme-images/button.png">
 
@@ -231,7 +233,7 @@ As shown on the images below, the nav bar has a consistent and clean style. it i
 
 <img src="assets/readme-images/button-hover.png">
 
-- The exception to the rule is the High Scores button. Due to the nature of this button and it's significane, it was decided to style differently with a golden (#) hue/ . This is to entice the players to keep playing, and a big factor in returning players.
+- The exception to the rule is the High Scores button. Due to the nature of this button and it's significance, it was decided to style this differently with a golden (#) hue/ . This is pure bragging righs and to entice the players to compete for the highest score. it will be big factor for returning players.
 
 #### Instagram link
 

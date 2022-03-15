@@ -84,7 +84,9 @@ h2 {
 
 /*these are containers/buttons the answers will populate*/
 .choice-container {
-    background-color: rgb(255,210,0);
+    /* background-color: rgb(255,210,0); */
+    background-color: rgb(239, 239, 239);
+    /* background-color: rgb(239, 239, 239); */
     display: flex;
     margin: 0 auto;
     margin-bottom: 1rem;
@@ -139,11 +141,13 @@ h2 {
 }
 
 .correct {
-    background: linear-gradient(32deg, rgba(11, 223, 36) 0%, rgb(41, 232, 111) 100%);
+    /* background: linear-gradient(32deg, rgba(11, 223, 36) 0%, rgb(41, 232, 111) 100%); */
+    background: rgb(255,210,0);
 }
 
 .incorrect {
-    background: linear-gradient(32deg, rgba(230, 29, 29, 1) 0%, rgb(224, 11, 11, 1) 100%);
+    /* background: linear-gradient(32deg, rgba(230, 29, 29, 1) 0%, rgb(224, 11, 11, 1) 100%); */
+    background: red;
 }
 
 /* style by BrainCodex, changed to suit my game*/
@@ -186,7 +190,9 @@ h2 {
 #progressBarFull {
     height: 100%;
     /* background: rgb(11,223,36); */
-    background: rgb(187 148 133);
+    /* background: rgb(187 148 133); */
+    /* background: linear-gradient(90deg, rgb(255, 247, 9) 0%, rgb(240, 221, 6) 100%); */
+    background: rgb(255,210,0);
     width: 0%;
 }
 
