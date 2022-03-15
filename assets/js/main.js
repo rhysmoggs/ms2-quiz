@@ -60,22 +60,22 @@ let questions = [
         choice4: 'Brazil',
         answer: 4,
     },
-    {
-        question: "How many countries border Austria?",
-        choice1: "2",
-        choice2: "8",
-        choice3: "1",
-        choice4: "5",
-        answer: 2,
-    },
-    {
-        question: "What is the capital city of Canada?",
-        choice1: "Quebec City",
-        choice2: "Toronto",
-        choice3: "Ottawa",
-        choice4: "Vancouver",
-        answer: 3,
-    }
+    // {
+    //     question: "How many countries border Austria?",
+    //     choice1: "2",
+    //     choice2: "8",
+    //     choice3: "1",
+    //     choice4: "5",
+    //     answer: 2,
+    // },
+    // {
+    //     question: "What is the capital city of Canada?",
+    //     choice1: "Quebec City",
+    //     choice2: "Toronto",
+    //     choice3: "Ottawa",
+    //     choice4: "Vancouver",
+    //     answer: 3,
+    // }
 ]
 
 const SCORE_POINTS = 5000

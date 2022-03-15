@@ -90,7 +90,7 @@ h2 {
     margin-bottom: 1rem;
     width: 50%;
     border-radius: 6px;
-    min-width: 30%;
+    min-width: 65%;
     text-transform: uppercase;
     text-align: center;
     border: 1px solid;
@@ -176,7 +176,8 @@ h2 {
 #progressBar {
     width: 10rem;
     height: 1.5rem;
-    border: 0.2rem solid rgb(11,223,36);
+    /* border: 0.2rem solid rgb(11,223,36); */
+    border: 0.2rem solid black;
     margin-top: 0.8rem;
     border-radius: 50px;
     overflow: hidden;
@@ -184,7 +185,8 @@ h2 {
 
 #progressBarFull {
     height: 100%;
-    background: rgb(11,223,36);
+    /* background: rgb(11,223,36); */
+    background: rgb(187 148 133);
     width: 0%;
 }
 
@@ -275,10 +277,43 @@ input::placeholder {
 
 /*media queries*/
 
-@media only screen and (max-width: 481px) {
+@media only screen and (max-width: 320px) {
     .logo {
         height: 120px;
     }
+    span {
+        font-size: 0.8rem;
+        top: 8%;
+    }
+    h2 {
+        font-size: 1.2rem;
+        margin-bottom: 0.8rem;
+    }
+    .hud-prefix {
+        font-size: 1.1rem;
+    }
+    .game-area {
+        top: 70%;
+    }
+    .btn {
+        width: 200px;
+    }
+    .choice-container {
+        width: 80%;
+    }
+    .controls-area {
+        display: block;
+    }
+    #username {
+        margin-bottom: 0.8rem;
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 481px) {
+    /* .logo {
+        height: 120px;
+    } */
     span {
         font-size: 1rem;
         top: 9%;
@@ -302,6 +337,9 @@ input::placeholder {
     .controls-area {
         display: block;
     }
+    #end-text {
+    font-size: 1.4rem;
+    }
     #username {
         margin-bottom: 1rem;
         width: 75%;
@@ -322,6 +360,13 @@ input::placeholder {
     }
     .hud-prefix {
         font-size: 1.4rem;
+    }
+    #username {
+        margin-bottom: 1.5rem;
+    }
+    input {
+        padding: 1.2rem;
+        font-size: 1.2rem;
     }
 }
 
