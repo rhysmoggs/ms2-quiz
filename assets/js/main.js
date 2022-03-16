@@ -41,6 +41,7 @@ const choices = Array.from(document.querySelectorAll('.choice-text'));
 const progressText = document.querySelector('#progressText');
 const scoreText = document.querySelector('#score');
 const progressBarFull = document.querySelector('#progressBarFull');
+const plane = document.querySelector('#plane');
 
 
 /*undefined let variables*/
@@ -125,6 +126,7 @@ getNewQuestion = () => {
     questionCounter++
     progressText.innerText = `Destination: ${questionCounter} / ${MAX_QUESTIONS}`
     progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`
+    plane.style.left = "100%"
     
     const questionsIndex = Math.floor(Math.random() * availableQuestions.length)
     currentQuestion = availableQuestions[questionsIndex]
