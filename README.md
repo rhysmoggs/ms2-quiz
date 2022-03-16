@@ -233,9 +233,13 @@ As shown on the images below, the nav bar has a consistent and clean style. it i
 
 <img src="assets/readme-images/button-hover.png">
 
-- The exception to the rule is the High Scores button. Due to the nature of this button and it's significance, it was decided to style this differently with a golden (#) hue/ . This is pure bragging righs and to entice the players to compete for the highest score. it will be big factor for returning players.
+- The few exception to the rule is the High Scores button (and mention the disabled button). Due to the nature of this button and it's significance, it was decided to style this differently with a golden (#) hue/ . This is pure bragging righs and to entice the players to compete for the highest score. it will be big factor for returning players.
 
 <img src="assets/readme-images/button-highscore.png">
+
+- The Save button is set as disabled as a default. Once the user inputs their name, the button returns to a normal state, just like the others.
+
+<img src="assets/readme-images/button-disabled.png">
 
 - gold (rgb(255,210,0)) indicates a correct answer
 
@@ -244,6 +248,12 @@ As shown on the images below, the nav bar has a consistent and clean style. it i
 - red(rgb(255,0,0)) indicates an incorrect answer
 
 <img src="assets/readme-images/button-incorrect.png">
+
+#### Input
+
+- The 'Enter your name' input field has a very basic style applied. IF the user chooses not to enter their name, then the Save button remains disabled and the user will not be able to save their score to the High Score section.
+
+<img src="assets/readme-images/input.png">
 
 #### Instagram link
 
