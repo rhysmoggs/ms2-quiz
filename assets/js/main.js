@@ -36,51 +36,92 @@ const highScores = JSON.parse(localStorage.getItem("highScores")) || []
 
 const endDiv = document.getElementById('end-container');
 
-const question = document.querySelector('#question');
-const choices = Array.from(document.querySelectorAll('.choice-text'));
-const progressText = document.querySelector('#progressText');
-const scoreText = document.querySelector('#score');
-const progressBarFull = document.querySelector('#progressBarFull');
-const plane = document.querySelector('#plane');
+// const question = document.querySelector('#question');
+const question = document.getElementById('question');
+// const choices = Array.from(document.querySelectorAll('.choice-text'));
+const choices = Array.from(document.getElementsByClassName('choice-text'));
+// const progressText = document.querySelector('#progressText');
+const progressText = document.getElementById('progressText');
+// const scoreText = document.querySelector('#score');
+const scoreText = document.getElementById('score');
+// const progressBarFull = document.querySelector('#progressBarFull');
+const progressBarFull = document.getElementById('progressBarFull');
+const plane = document.getElementById('plane');
 
 
 /*undefined let variables*/
-let currentQuestion = {}
-let acceptingAnswers = true
-let score = 0
-let questionCounter = 0
-let availableQuestions = []
+let currentQuestion = {};
+let acceptingAnswers = false;
+let score = 0;
+let questionCounter = 0;
+let availableQuestions = [];
 
 /*list of questions*/
-let questions = [
-    {
-        question: 'What is the largest country in South America?',
-        choice1: 'Paraguay',
-        choice2: 'Colombia',
-        choice3: 'Suriname',
-        choice4: 'Brazil',
-        answer: 4,
-    },
-    // {
-    //     question: "How many countries border Austria?",
-    //     choice1: "2",
-    //     choice2: "8",
-    //     choice3: "1",
-    //     choice4: "5",
-    //     answer: 2,
-    // },
-    // {
-    //     question: "What is the capital city of Canada?",
-    //     choice1: "Quebec City",
-    //     choice2: "Toronto",
-    //     choice3: "Ottawa",
-    //     choice4: "Vancouver",
-    //     answer: 3,
-    // }
-]
+// let questions = [
+//     {
+//         question: 'What is the largest country in South America?',
+//         choice1: 'Paraguay',
+//         choice2: 'Colombia',
+//         choice3: 'Suriname',
+//         choice4: 'Brazil',
+//         answer: 4,
+//     },
+//     {
+//         question: "How many countries border Austria?",
+//         choice1: "2",
+//         choice2: "8",
+//         choice3: "1",
+//         choice4: "5",
+//         answer: 2,
+//     },
+//     {
+//         question: "What is the capital city of Canada?",
+//         choice1: "Quebec City",
+//         choice2: "Toronto",
+//         choice3: "Ottawa",
+//         choice4: "Vancouver",
+//         answer: 3,
+//     }
+// ]
 
-const SCORE_POINTS = 5000
-const MAX_QUESTIONS = 4
+let questions = [];
+
+fetch(
+    'https://opentdb.com/api.php?amount=10&category=22&difficulty=easy&type=multiple'
+)
+    .then((res) => {
+        return res.json();
+    })
+    .then((loadedQuestions) => {
+        questions = loadedQuestions.results.map((loadedQuestion) => {
+            const formattedQuestion = {
+                question: loadedQuestion.question,
+            };
+
+            const answerChoices = [...loadedQuestion.incorrect_answers];
+            formattedQuestion.answer = Math.floor(Math.random() * 4) + 1;
+            answerChoices.splice(
+                formattedQuestion.answer - 1,
+                0,
+                loadedQuestion.correct_answer
+            );
+
+            answerChoices.forEach((choice, index) => {
+                formattedQuestion['choice' + (index + 1)] = choice;
+            });
+
+            return formattedQuestion;
+        });
+
+        // startGame();
+    })
+    .catch((err) => {
+        console.error(err);
+    });
+
+
+const SCORE_POINTS = 2500
+const MAX_QUESTIONS = 10
 
 /*event listener set to the logo button that reloads the home page*/
 logoReload.addEventListener("click", reloadGame);
@@ -97,6 +138,7 @@ startGame = () => {
     getNewQuestion()
     containerDiv.classList.remove('hide');
     startButton.classList.add('hide');
+    gameArea.style.top = "65%";
     if (howToButton.style.display !== "block") {
         howToButton.style.display = "none";
         howToDiv.style.display = "none";
@@ -130,11 +172,11 @@ getNewQuestion = () => {
     
     const questionsIndex = Math.floor(Math.random() * availableQuestions.length)
     currentQuestion = availableQuestions[questionsIndex]
-    question.innerText = currentQuestion.question
+    question.innerHTML = currentQuestion.question
 
     choices.forEach(choice => {
         const number = choice.dataset['number']
-        choice.innerText = currentQuestion['choice' + number]
+        choice.innerHTML = currentQuestion['choice' + number]
     })
 
     availableQuestions.splice(questionsIndex, 1)
