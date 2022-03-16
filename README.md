@@ -235,6 +235,16 @@ As shown on the images below, the nav bar has a consistent and clean style. it i
 
 - The exception to the rule is the High Scores button. Due to the nature of this button and it's significance, it was decided to style this differently with a golden (#) hue/ . This is pure bragging righs and to entice the players to compete for the highest score. it will be big factor for returning players.
 
+<img src="assets/readme-images/button-highscore.png">
+
+- gold (rgb(255,210,0)) indicates a correct answer
+
+<img src="assets/readme-images/button-correct.png">
+
+- red(rgb(255,0,0)) indicates an incorrect answer
+
+<img src="assets/readme-images/button-incorrect.png">
+
 #### Instagram link
 
 - The Instagram link appears centrally on both the index.html and shop.html. webpages. It serves as a visual reminder to check the company's social media account. This aims to drive up visitors and curiosity.
