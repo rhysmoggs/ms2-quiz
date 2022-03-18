@@ -4,13 +4,19 @@
 
 Here is the brand new launch for the geography quiz: Globe Trotter Quiz.
 
-This is the first interactive quiz the company has launched, announcing themselves to the world. Globe Trotter is a passion project, birthed from the creators love of travel and adventure. Having been fortunate enough to travel the world, the creator still longs and obsesses over memories and places visited, and loves to to be reminded about all travel-related things. Moreso, the creator has a desire to share that love of travel and adventure with a greater audience: like-minded people or travellers, keen quizzers, families or students. The creator expects to announce their quiz and subsoquently attract more and more players from accross the world.
+This is the first interactive quiz the company has launched, announcing themselves to the world. Globe Trotter is a passion project, birthed from the creators love of travel and adventure. Having been fortunate enough to travel the world, the creator still longs and obsesses over memories and places visited, and loves to to be reminded about all travel-related things. Moreso, the creator has a desire to share that love with a greater audience: like-minded people or travellers, keen quizzers, families or students - all are welcome to challenge themselves! The creator is excited to launch their quiz and hope to attract more and more players from accross the world.
 
-The quiz will clearly display information for new and returning customers including the creators contact info via social media links. The website is fully responsible on a range from hand-held devices to larger screens. This is to ensure that as many eyes as possible can play the quiz and enjoy this journey.
+Quiz premis and rules:
 
-25,000 miles to travel around the globe. The user's goal is to collect as many Air Miles (each question giving ____Air Miles), eventally gathering enough to travel around the world.
+A classic geogrpahy quiz, suitable to single or multiple players of all ages. The Globe Trotter Quiz is a multiple-choice quiz where the user is presented with 10 questions, each correct answer worth 2500 miles. The goal? To answer 10 correct answers totalling a whopping 25,000 miles - about the same distance it is to travel around the globe! See if you can travel to the top of the High Scores list!
 
-The quiz can be plaeyd by one person or as would like to partake. There are rumours of a more child-friendly version to follow with additions of sound and pictures and even theme changes.
+
+
+The quiz will clearly display information for new and returning customers including the creators contact info via social media links. The website is fully responsible on a range of devices - from hand-held devices to larger screens such as monitors or even TVs. This is to ensure that as many eyes as possible can play the quiz and enjoy this journey.
+
+
+
+The quiz can be played by one person or as many as would like to partake. There are rumours of a more child-friendly version to follow with additions of sound and pictures and even theme changes.
 
 The quiz is a simple geogrpahy/travel quiz, with questions focused on the players knowledge of this subject.
 The quiz generates 1 question at a time, with 4 multiple choice options as answers.
@@ -185,27 +191,13 @@ Extremely important aspect.
 
 ## Interactive Elements
 
--   There are many interactive elements to the game.
+-   Following is a list of all interactive elements of the Globe Trotter Quiz.
 
-#### Navbar
+#### Quiz Logo
 
-As shown on the images below, the nav bar has a consistent and clean style. it is completely responsive, with a toggle menu appearing for smaller screen sizes of 767px and under. This was based on Boostraps own nav [documentation](https://getbootstrap.com/docs/4.0/components/navbar/), which I then styled myself and altered classes. The company's name is always visible, which is very important for consistency and brand exposure and familiarity. Having the company's name present as a logo, also allows the user to instinctively click on it to return to the home page.
+As shown on the images below, the quiz logo and title is very clear and bright. The centerpiece, always there and clickable. It shows off the quiz nicely, it's obviously related to geogrpahy and serves as a constant reminder to the user about where they are and what they are playing. The logo itself is a clickable link (a cursor appears when hovering over), and returns the user back to the home page at any time. 
 
-- Desktop Navbar
-
-<img src="assets/readme-images/desktop-navbar.png">
-
-- Tablet Navbar
-
-<img src="assets/readme-images/tablet-navbar.png">
-
-- Mobile Navbar
-
-<img src="assets/readme-images/mobile-navbar.png">
-
-- Mobile Navbar when clicked, opens up the navigation links
-
-<img src="assets/readme-images/mobile-navbar2.png">
+<img src="assets/readme-images/logo-click.png">
 
 #### Footer
 

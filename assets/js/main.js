@@ -1,19 +1,19 @@
 // wait for the DOM to finish loading before running the game
 // get the button elements and add event listeners to them
-document.addEventListener("DOMContentLoaded", function() {
-    let buttons = document.getElementsByTagName("button");
+// document.addEventListener("DOMContentLoaded", function() {
+//     let buttons = document.getElementsByTagName("button");
 
-    for (let button of buttons){
-        button.addEventListener("click", function() {
-            if (this.getAttribute("data-type") === "start") {
-                alert("You clicked Start!");
-            } else {
-                let buttonType = this.getAttribute("data-type");
-                alert(`You clicked ${buttonType}`);
-            }
-        });
-    }
-});
+//     for (let button of buttons){
+//         button.addEventListener("click", function() {
+//             if (this.getAttribute("data-type") === "start") {
+//                 alert("You clicked Start!");
+//             } else {
+//                 let buttonType = this.getAttribute("data-type");
+//                 alert(`You clicked ${buttonType}`);
+//             }
+//         });
+//     }
+// });
 
 // list of variables
 const logoReload = document.getElementById('logo');
@@ -167,8 +167,8 @@ getNewQuestion = () => {
 
     questionCounter++
     progressText.innerText = `Destination: ${questionCounter} / ${MAX_QUESTIONS}`
-    progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`
-    plane.style.left = "100%"
+    // progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`
+    // plane.style.left = "100%"
     
     const questionsIndex = Math.floor(Math.random() * availableQuestions.length)
     currentQuestion = availableQuestions[questionsIndex]
@@ -195,8 +195,62 @@ choices.forEach(choice => {
 
         let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'
 
+        // if(classToApply === 'correct') {
+        //     incrementScore(SCORE_POINTS)
+        // }
+
+        //attempt at incrementing score with plane image
+        // let widthLet = 0;
+        // let x = document.getElementById("progressBarFull");
         if(classToApply === 'correct') {
             incrementScore(SCORE_POINTS)
+            progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`
+            plane.style.left = "100%"
+            // document.getElementById("progressBarFull").style.width = "50%";
+            // let increaseWidth = 0;
+
+            // var value = document.getElementById("progressBarFull").style.width;
+            // console.log(value);
+            // progressBarFull.style.width += value+10+"%";
+
+
+
+
+            // if (parseInt(progressBarFull).style.width) === 0) {
+            //     progressBarFull.style.width = increaseWidth + "%";
+            //     increaseWidth++;
+            // }
+            // getCurrentWidth = progressBarFull.style;
+            // console.log(getCurrentWidth)
+            // getCurrentWidth + 10+"%";
+
+
+            // var style = getComputedStyle(progressBarFull).getPropertyValue('width');
+
+            // progressBarFull.style.width = "length|%|"
+            
+            // console.log(style)
+
+            // document.progressBarFull.style.setProperty('width', "10%");
+            // const element = document.getElementById("myP");
+            // if (!progressBarFull.style.width == widthVar) {
+            //     widthVar + 10;
+            // }
+
+            // let x = document.getElementById("progressBarFull").style.width
+            // progressBarFull.style.width = (x + 10)+"%";
+            // plane.style.left = "100%"
+            // let x = document.getElementById("progressBarFull");
+            // let width = x.offsetWidth;
+            // x.style.width = (widthLet+10)+"%";
+            // let newW = (widthLet+10)+"%";
+            // widthLet + 10
+            // console.log(widthLet);
+            // x.style.width = +widthLet +"%";
+            // let newWidth = +widthLet +"%";
+            // newWidth + 10;
+            // x.style.width = (width+10)+"%";
+            // plane.style.left = "100%"
         }
 
         selectedChoice.parentElement.classList.add(classToApply)
@@ -206,6 +260,13 @@ choices.forEach(choice => {
             getNewQuestion()
 
         }, 2000)
+
+        // if(classToApply === 'correct') {
+        //     // let x = document.getElementById("progressBarFull").style.width
+        //     let x = document.getElementById("progressBarFull");
+        //     x.style.width = (x + 10)+"%";
+        //     plane.style.left = "100%"
+        // }
     })
 })
 
