@@ -199,21 +199,25 @@ As shown on the images below, the quiz logo and title is very clear and bright. 
 
 <img src="assets/readme-images/logo-click.png">
 
-#### Footer
 
-- Desktop Footer & Tablet Footer
+#### Toggle Menu Elements
 
-<img src="assets/readme-images/footer-big.png">
+Listed are the main features of the main menu of the quiz. The user simply clicks to show or hide the buttons to display info or return back to the main menu.
 
-- Mobile Footer
+- How to Play
 
-<img src="assets/readme-images/footer.png">
+<img src="assets/readme-images/how-to-container.png">
 
-#### Modal
+- Contact
 
-- The modal appears when the "Show me more" link on the offer banner just below the navbar. Functions on mobile, tablet, laptop and larger desktops.
+Each icon for the social media links turn gold when the user hovers over them to highlight the focused icon.
 
-<img src="assets/readme-images/modal.png">
+<img src="assets/readme-images/contact-container.png">
+<img src="assets/readme-images/contact-container-hover.png">
+
+- High Score
+
+<img src="assets/readme-images/highscore-container.png">
 
 #### Buttons
 
@@ -247,37 +251,11 @@ As shown on the images below, the quiz logo and title is very clear and bright. 
 
 <img src="assets/readme-images/input.png">
 
-#### Instagram link
+#### Progress Bar
 
-- The Instagram link appears centrally on both the index.html and shop.html. webpages. It serves as a visual reminder to check the company's social media account. This aims to drive up visitors and curiosity.
+- The progress bar indicates the progress made by the user via the golden colour-fill and plane image. Every correct answer adds 10% to the progress bar - with the user's aim to reach 100%, a total of 10/10 correct answers.
 
-<img src="assets/readme-images/instagram.png">
-
-#### Newsletter
-
-- The Newsletter found on the index.html page requires validation before accepting the user input.
-
-<img src="assets/readme-images/newsletter.png">
-
-- When user successfully complies with prompted validation, they are met with the following screen.
-- This screen is taken from the [Code Institute](https://codeinstitute.net/) template, and is used just for the purpose of showing a successful action.
-
-<img src="assets/readme-images/ci-form.png">
-
-#### Message Us
-
-- As with the Newsletter feature seen above, the Message Us form on the contact.html page also requires validation before the user can submit their data.
-
-<img src="assets/readme-images/messageus.png">
-
-- As with the Newsletter feature, the user will be met with the same Code Institute webpage informing them that the data was input successfully.
-
-<img src="assets/readme-images/ci-form2.png">
-
-#### Google Maps
-
-- [Google Maps](https://www.google.com/maps) was used to provide an interactive map on the Contact Us page. It was embedded as an iframe and then styled further.
-
+<img src="assets/readme-images/progressbar.png">
 
 ## Technologies Used
 
@@ -285,35 +263,34 @@ As shown on the images below, the quiz logo and title is very clear and bright. 
 
 -   [HTML5](https://en.wikipedia.org/wiki/HTML5)
 -   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+-   [JS](https://en.wikipedia.org/wiki/JavaScript)
 
 ### Frameworks, Libraries & Programs Used
 
-1. [Bootstrap 4.6.0:](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
-    - Bootstrap was used to assist with the responsiveness and styling of the website.
-1. [Hover.css:](https://ianlunn.github.io/Hover/)
-    - Hover.css was used on the Social Media icons in the footer to add the float transition while being hovered over.
 1. [Google Fonts:](https://fonts.google.com/)
     - Google fonts were used to import the 'Titillium Web' font into the style.css file which is used on all pages throughout the project.
 1. [Font Awesome:](https://fontawesome.com/)
     - Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
 1. [jQuery:](https://jquery.com/)
-    - jQuery came with Bootstrap to make the navbar responsive but was also used for the smooth scroll function in JavaScript.
+    - jQuery was used to simplify and manipulate some tasks instead of regular JS.
 1. [Git](https://git-scm.com/)
     - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 1. [GitHub:](https://github.com/)
     - GitHub is used to store the projects code after being pushed from Git.
+1. [Balsamiq:](https://balsamiq.com/)
+    - Balsamiq was used to create the [wireframes](#wireframes) during the design process.
 1. [TinyPNG:](https://tinypng.com/)
     - TinyPNG is used to optimize images used in the project.
 1. [Miscrosoft Paint:](https://support.microsoft.com/en-us/windows/get-microsoft-paint-a6b9578c-ed1c-5b09-0699-4ed8115f9aa9)
     - Microsoft Paint was used to crop and resize images and editing photos for the project.
-1. [Balsamiq:](https://balsamiq.com/)
-    - Balsamiq was used to create the [wireframes](https://github.com/) during the design process.
+1. [Snip & Sketch:](https://www.microsoft.com/en-gb/p/snip-sketch/9mz95kl8mr0l)
+    - Snip & Sketch was used to screenshot the majority of images used for this README.
 
 ## Testing
 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
--   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
+-   [W3C Markup Validator](https://validator.w3.org/#validate_by_input)
 
 <img src="assets/readme-images/validator.png">
 
@@ -451,7 +428,6 @@ Later on in the development I removed the majority of the bootstrap code and bui
 -   codes whatever website for googling erros/help
 
 -   The Slack community.
-
 
 
 

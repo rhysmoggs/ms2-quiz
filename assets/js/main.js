@@ -31,10 +31,10 @@ const contactDiv = document.getElementById('contact-container');
 
 const highscoresButton = document.getElementById('highscore-btn');
 const highscoresDiv = document.getElementById('high-container');
-const highScoresList = document.querySelector('#highScoresList')
-const highScores = JSON.parse(localStorage.getItem("highScores")) || []
+const highScoresList = document.querySelector('#highScoresList');
+const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 
-const endDiv = document.getElementById('end-container');
+// const endDiv = document.getElementById('end-container');
 
 // const question = document.querySelector('#question');
 const question = document.getElementById('question');
@@ -120,8 +120,8 @@ fetch(
     });
 
 
-const SCORE_POINTS = 2500
-const MAX_QUESTIONS = 10
+const SCORE_POINTS = 2500;
+const MAX_QUESTIONS = 10;
 
 /*event listener set to the logo button that reloads the home page*/
 logoReload.addEventListener("click", reloadGame);
@@ -132,10 +132,10 @@ function reloadGame() {
 
 /*start the game*/
 startGame = () => {
-    questionCounter = 0
-    score = 0
-    availableQuestions = [...questions]
-    getNewQuestion()
+    questionCounter = 0;
+    score = 0;
+    availableQuestions = [...questions];
+    getNewQuestion();
     containerDiv.classList.remove('hide');
     startButton.classList.add('hide');
     gameArea.style.top = "65%";
@@ -144,14 +144,14 @@ startGame = () => {
         howToDiv.style.display = "none";
     } else {
         howToButton.style.display = "none";
-    }; 
+    }
     contactButton.classList.add('hide');
     if (highscoresButton.style.display !== "block") {
         highscoresButton.style.display = "none";
         highscoresDiv.style.display = "none";
     } else {
         highscoresButton.style.display = "none";
-    };
+    }
 };
 
 /*event listener set to the start button that runs the game*/
@@ -160,40 +160,39 @@ startButton.addEventListener("click", startGame);
 /*generates next question, if max questions reached, redirects to end.html*/
 getNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
-        localStorage.setItem('mostRecentScore', score)
-
-        return window.location.assign('../end.html')
+        localStorage.setItem('mostRecentScore', score);
+        return window.location.assign('../end.html');
     }
 
-    questionCounter++
-    progressText.innerText = `Destination: ${questionCounter} / ${MAX_QUESTIONS}`
+    questionCounter++;
+    progressText.innerText = `Destination: ${questionCounter} / ${MAX_QUESTIONS}`;
     // progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`
     // plane.style.left = "100%"
     
-    const questionsIndex = Math.floor(Math.random() * availableQuestions.length)
-    currentQuestion = availableQuestions[questionsIndex]
-    question.innerHTML = currentQuestion.question
+    const questionsIndex = Math.floor(Math.random() * availableQuestions.length);
+    currentQuestion = availableQuestions[questionsIndex];
+    question.innerHTML = currentQuestion.question;
 
     choices.forEach(choice => {
-        const number = choice.dataset['number']
-        choice.innerHTML = currentQuestion['choice' + number]
-    })
+        const number = choice.dataset['number'];
+        choice.innerHTML = currentQuestion['choice' + number];
+    });
 
-    availableQuestions.splice(questionsIndex, 1)
+    availableQuestions.splice(questionsIndex, 1);
 
-    acceptingAnswers = true
-}
+    acceptingAnswers = true;
+};
 
 /*check if the answer is correct/incorrect call it checkAnswer instead?*/
 choices.forEach(choice => {
     choice.addEventListener('click', e => {
-        if(!acceptingAnswers) return
+        if(!acceptingAnswers) return;
 
-        acceptingAnswers = false
-        const selectedChoice = e.target
-        const selectedAnswer = selectedChoice.dataset['number']
+        acceptingAnswers = false;
+        const selectedChoice = e.target;
+        const selectedAnswer = selectedChoice.dataset['number'];
 
-        let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'
+        let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
 
         // if(classToApply === 'correct') {
         //     incrementScore(SCORE_POINTS)
@@ -203,9 +202,9 @@ choices.forEach(choice => {
         // let widthLet = 0;
         // let x = document.getElementById("progressBarFull");
         if(classToApply === 'correct') {
-            incrementScore(SCORE_POINTS)
-            progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`
-            plane.style.left = "100%"
+            incrementScore(SCORE_POINTS);
+            progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`;
+            plane.style.left = "100%";
             // document.getElementById("progressBarFull").style.width = "50%";
             // let increaseWidth = 0;
 
@@ -253,13 +252,13 @@ choices.forEach(choice => {
             // plane.style.left = "100%"
         }
 
-        selectedChoice.parentElement.classList.add(classToApply)
+        selectedChoice.parentElement.classList.add(classToApply);
 
         setTimeout(() => {
-            selectedChoice.parentElement.classList.remove(classToApply)
-            getNewQuestion()
+            selectedChoice.parentElement.classList.remove(classToApply);
+            getNewQuestion();
 
-        }, 2000)
+        }, 2000);
 
         // if(classToApply === 'correct') {
         //     // let x = document.getElementById("progressBarFull").style.width
@@ -267,14 +266,14 @@ choices.forEach(choice => {
         //     x.style.width = (x + 10)+"%";
         //     plane.style.left = "100%"
         // }
-    })
-})
+    });
+});
 
 /*increment score for each correct answer*/
 incrementScore = num => {
-    score +=num
-    scoreText.innerText = score
-}
+    score +=num;
+    scoreText.innerText = score;
+};
 
 // working - list to add score to highscore list
 // highScoresList.innerHTML =
@@ -285,8 +284,8 @@ incrementScore = num => {
 //experimental
 highScoresList.innerHTML =
 highScores.map(score => {
-    return `<p class="high-score">${score.name} - ${score.score} Air Miles</p>`
-}).join("")
+    return `<p class="high-score">${score.name} - ${score.score} Air Miles</p>`;
+}).join("");
 
 
 // https://sebhastian.com/javascript-show-hide-div-onclick-toggle/ then tweaked to serve my game
@@ -384,11 +383,3 @@ contactButton.onclick = function () {
         gameArea.style.top = "60%";
     }
 };
-
-
-
-
-
-
-
-
