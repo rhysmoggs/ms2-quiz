@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
 
-/*used following link as template then adjusted to my game. Reference this in README.md, specifiy what's yours and what's not*/
-/*How to Make a Quiz App using HTML CSS Javascript - Vanilla Javascript Project for Beginners Tutorial*/
-/*https://www.youtube.com/watch?v=f4fB9Xg2JEY&list=FLoLMoJL7IfiYl8F3sN_CEqQ&index=10*/
-
 body {
     box-sizing: border-box;
     margin: 0;

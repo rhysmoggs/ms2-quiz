@@ -204,13 +204,6 @@ choices.forEach(choice => {
 
         let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
 
-        // if(classToApply === 'correct') {
-        //     incrementScore(SCORE_POINTS)
-        // }
-
-        //attempt at incrementing score with plane image
-        // let widthLet = 0;
-        // let x = document.getElementById("progressBarFull");
         if(classToApply === 'correct') {
             correctAnswers = (correctAnswers + 1);
             
@@ -219,51 +212,6 @@ choices.forEach(choice => {
             // progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`;
             progressBarFull.style.width = `${correctAnswers * 10}%`;
             plane.style.left = "100%";
-            // document.getElementById("progressBarFull").style.width = "50%";
-            // let increaseWidth = 0;
-
-            // var value = document.getElementById("progressBarFull").style.width;
-            // console.log(value);
-            // progressBarFull.style.width += value+10+"%";
-
-
-
-
-            // if (parseInt(progressBarFull).style.width) === 0) {
-            //     progressBarFull.style.width = increaseWidth + "%";
-            //     increaseWidth++;
-            // }
-            // getCurrentWidth = progressBarFull.style;
-            // console.log(getCurrentWidth)
-            // getCurrentWidth + 10+"%";
-
-
-            // var style = getComputedStyle(progressBarFull).getPropertyValue('width');
-
-            // progressBarFull.style.width = "length|%|"
-            
-            // console.log(style)
-
-            // document.progressBarFull.style.setProperty('width', "10%");
-            // const element = document.getElementById("myP");
-            // if (!progressBarFull.style.width == widthVar) {
-            //     widthVar + 10;
-            // }
-
-            // let x = document.getElementById("progressBarFull").style.width
-            // progressBarFull.style.width = (x + 10)+"%";
-            // plane.style.left = "100%"
-            // let x = document.getElementById("progressBarFull");
-            // let width = x.offsetWidth;
-            // x.style.width = (widthLet+10)+"%";
-            // let newW = (widthLet+10)+"%";
-            // widthLet + 10
-            // console.log(widthLet);
-            // x.style.width = +widthLet +"%";
-            // let newWidth = +widthLet +"%";
-            // newWidth + 10;
-            // x.style.width = (width+10)+"%";
-            // plane.style.left = "100%"
         }
 
         selectedChoice.parentElement.classList.add(classToApply);
@@ -273,13 +221,6 @@ choices.forEach(choice => {
             getNewQuestion();
 
         }, 2000);
-
-        // if(classToApply === 'correct') {
-        //     // let x = document.getElementById("progressBarFull").style.width
-        //     let x = document.getElementById("progressBarFull");
-        //     x.style.width = (x + 10)+"%";
-        //     plane.style.left = "100%"
-        // }
     });
 });
 

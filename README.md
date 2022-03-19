@@ -4,11 +4,11 @@
 
 Here is the brand new launch for the geography quiz: Globe Trotter Quiz.
 
-This is the first interactive quiz the company has launched, announcing themselves to the world. Globe Trotter is a passion project, birthed from the creators love of travel and adventure. Having been fortunate enough to travel the world, the creator still longs and obsesses over memories and places visited, and loves to to be reminded about all travel-related things. Moreso, the creator has a desire to share that love with a greater audience: like-minded people or travellers, keen quizzers, families or students - all are welcome to challenge themselves! The creator is excited to launch their quiz and hope to attract more and more players from accross the world.
+This is the first interactive quiz the company has launched, announcing themselves to the world. Globe Trotter Quiz is a passion project, birthed from the creators love of travel and adventure. Having been fortunate enough to travel the world, the creator still longs and obsesses over memories and places visited, and loves to to be reminded about all travel-related things. Moreso, the creator has a desire to share that love with a greater audience: like-minded people and travellers, keen quizzers, families and students - all are welcome to challenge themselves! The creator is excited to launch their quiz and hope to attract more and more players from accross the world.
 
-Quiz premis and rules:
+### Quiz premis and rules:
 
-A classic geogrpahy quiz, suitable to single or multiple players of all ages. The Globe Trotter Quiz is a multiple-choice quiz where the user is presented with 10 questions, each correct answer worth 2500 miles. The goal? To answer 10 correct answers totalling a whopping 25,000 miles - about the same distance it is to travel around the globe! See if you can travel to the top of the High Scores list!
+A classic geogrpahy quiz, suitable to single or multiple players of all ages. The Globe Trotter Quiz is a multiple-choice quiz where the user is presented with 10 questions, each correct answer worth 2500 air miles. The goal? To answer 10 correct answers totalling a whopping 25,000 air miles - about the same distance it is to travel around the globe! See if you can travel to the top of the High Scores list!
 
 
 
@@ -321,20 +321,23 @@ Following are the Google Chrome Lighthouse results for each page.
 
 ### Further Testing
 
--   Testing was predominantly made using Google Chrome's own developer tools and 'Inspect Mode', although testing was done sporadically on alternative browsers with each major addition to the website e.g. new content or responsive changes via keyframes.
--   All interactive elements of the quiz were tested. Clicking, hiding/showing content, user input, links and general flow of quiz. Bugs were fixed as they arose.
+-   Testing was predominantly made using Google Chrome's own developer tools and 'Inspect Mode', although testing was done sporadically on alternative browsers with each major addition to the website e.g new content, style updates and responsive changes via keyframes.
+-   Console.log() function was used for JavaScript code development.
+-   All interactive elements of the quiz were tested. Button functions, clicking, hiding/showing content, user input, links and general flow of quiz. Bugs were fixed as they arose.
+-   Testing that the score updated correcttly, incrementing on correct answers only and progressbar progression to reflect this. The same process was done for incorrect answers and various combinations of correct and incorrect answers and users input. The final score was also checked against the in-game score for accuracy and again when submitting to the High Score area.
 -   The quiz was tested on Google Chrome, Mozilla Firefox, Microsoft Edge and Opera browsers and ran efficiently and consistently on each one. The quiz looked and operated as intended.
--   The website was viewed on a variety of devices such as Desktop, Laptop, iPad & iPhoneX.
--   I had feedback throughout from Noémie herself, who gave guidance and a critical eye throughout.
+-   The quiz was viewed on a variety of devices such as Desktop, Laptop, iPad & iPhoneX.
+-   Feedback from friends and family, testing the quiz with no prior instruction or expectations. Adjustments were made if necessary to satisfy the [User Targets](#as-a-new-user).
 
 ### Bug Fixes
 Bug fixes were predominantly completed in real-time as soon as any issues arose. This was to ensure the project would continue developing smoothly without serious, unmanagable bugs arising later that could drastically reduce development time or the layout and functioning of the quiz.
 
 -   As seen from the style.css file, there is a lot of custom CSS. Media queries were used at different breakpoints - although time consuming, it was vital to invest time into this to ensure the quiz was functioning correctly on various displays to enure a major [User Targets](#as-a-new-user) was met. Some JavaScript tweaks were also implemented to alter the class width at different stages of the quiz e.g. the main menu, quiz itself or the end.
 
--   There was an issue on the iPad where the navbar would push the white background and links down to cover the 'offer banner' below. This was due to my custom padding settings overriding bootstraps own classes. This was resolved by changing it's property to "width: max-content" on a media query from 768px and up.
-
--   There was an issue on smaller screens where the footer social media links - via Font Awesome icons - were stacking untidily and creating padding issues. This was resolved by creating a media query to reduce the icon sizes at the relevant breakpoint for smaller screens.
+-   The main containers (see style.css classes .game-area and .container ) would either overlap or completely hide the quiz title and logo. The Globe Trotter Quiz title and logo should be on display at all times no matter what seciton of the quiz the user was viewing, so obviously this bug was very undesirable. This was bug was fixed in a few ways:
+    - media queries, as explained above.
+    - through adding a margin-top to push the container down and clear from the title and logo.
+    - custom JavaScript code to alter specific classes.
 
 -   Added rel-"noopener" to external links opening in new tabs for securirty purposes.
 
@@ -393,43 +396,37 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 ## Credits
 
 ### Code
--   At the early stages of the development, [Bootstrap4](https://getbootstrap.com/docs/4.6/getting-started/introduction/) code was used to create responsive containers throughout the website. I would use their principal code for building the layout via containers, rows and columns then add my own content, elements or adjust their pre-determined classes.
-Later on in the development I removed the majority of the bootstrap code and built custom sections, containers and content with custom css. This decision was made after viewing [MS1 Preparation and CSS Positioning by Suzy Bennett](https://www.youtube.com/watch?v=N4bhJ4u29Do)'s YouTube video.
+-   At the early stages of the development, the [How to Make a Quiz App using HTML CSS Javascript - Vanilla Javascript Project for Beginners Tutorial](https://www.youtube.com/watch?v=f4fB9Xg2JEY&list=FLoLMoJL7IfiYl8F3sN_CEqQ&index=16) tutorial was followed and the code was used as the basis of the quiz. Original code was later added alongside that found in the YouTube video to suit the quiz. Code tweaks were made to suit this quiz, pre-determined code edited or removed along with adjustments and restyling to the majority of the CSS found in the credited video. Upon further searching, it seems that [Build a Quiz App - Intro](https://www.youtube.com/watch?v=u98ROZjBWy8&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx) and that playlist of videos may be what the YouTube video I had followed to begin with was also inpired by.
 
-- The navbar keeps Bootstrap's own code, although I have added my own css to it to fit the website layout and responsiveness. I used some of Bootstraps own classes to further customize their default navbar.
+- The API aspect of the quiz was introduced thanks to the [Build a Quiz App (11) - Fetch API to Load Questions API](https://www.youtube.com/watch?v=3aKOQn2NPFs&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&index=12) tutorial, to which edits were then made.
+
+-   The ability to toggle (show and hide) content via the How To Play, Contact and High Score buttons on the main menu screen came from W3Sschools documentation found [here](https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp), and a separate sournce [here](https://sebhastian.com/javascript-show-hide-div-onclick-toggle/) which was then edited to suit the project, along with additional customization.
+
+-   This README.md document was based on Code Institute's [SampleREADME](https://github.com/Code-Institute-Solutions/SampleREADME/blob/master/README.md). The template was used as a guide, then filled with content related to this quiz. The Bakes by Noemie [README.md](https://github.com/rhysmoggs/ms1-bakes-by-noemie/blob/main/README.md) file - the developers personal MS1 submission for the Code Institute course - was also used and then edited to suit this project.
 
 ### Inspiration
 
--   The idea of the offer banner found just under the navbar was taken from [Code Institute](https://codeinstitute.net/)'s 'Whiskey Drop' banner although I styled and created the html aspects myself.
+-   The Code Institute Slack community, especially projects from the peer-code-review channel.
 
--   Youtube links here and code credit, content etc
-
-### Content
-
--   The hero image on the index.html webpage is owned by Noémie Fradette of Bakes by Noémie.
-
--   https://www.w3schools.com/howto/howto_css_button_on_image.asp
-
--   This README.md document was based on Code Institute's layout [template](https://github.com/Code-Institute-Solutions/SampleREADME/blob/master/README.md), to whcih edits were made. The Bakes by Noemie README.md file was also used and then edited to suit this project??.
-
-
-### Media
+### Content & Media
 
 -   The main background image (maps.jpg) - Photo by Andrew Neel from Pexels found [here](https://www.pexels.com/photo/assorted-map-pieces-2859169/)
 
--   The logo was created using Canva
+-   The logo (logo.png) was created using Canva.
 
--   The plane image for the progress bar was created using Canva
+-   The plane (plane.png) image for the progress bar was created using Canva.
 
 ### Acknowledgements
 
--   My Mentor for helpful feedback.
+-   Stack Overflow [website](https://stackoverflow.com/) for general problem solving.
 
--   Tutor support at Code Institute for their support.
+-   My Mentor for helpful feedback and input.
 
--   codes whatever website for googling erros/help
+-   Tutor support at Code Institute.
 
--   The Slack community.
+-   codes whatever website for googling erros/help.
+
+
 
 
 
