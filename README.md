@@ -268,27 +268,29 @@ Each icon for the social media links turn gold when the user hovers over them to
 ### Frameworks, Libraries & Programs Used
 
 1. [Google Fonts:](https://fonts.google.com/)
-    - Google fonts were used to import the 'Titillium Web' font into the style.css file which is used on all pages throughout the project.
+    - Google fonts is used to import the 'Poppins' font into the style.css file which is used on all fonts within the quiz.
 1. [Font Awesome:](https://fontawesome.com/)
-    - Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
+    - Font Awesome is used on all pages throughout the quiz to add icons for aesthetic and UX purposes.
 1. [jQuery:](https://jquery.com/)
-    - jQuery was used to simplify and manipulate some tasks instead of regular JS.
+    - jQuery is used to simplify and manipulate some tasks instead of regular JS.
 1. [Git](https://git-scm.com/)
-    - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+    - Git is used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 1. [GitHub:](https://github.com/)
     - GitHub is used to store the projects code after being pushed from Git.
 1. [Balsamiq:](https://balsamiq.com/)
-    - Balsamiq was used to create the [wireframes](#wireframes) during the design process.
+    - Balsamiq is used to create the [wireframes](#wireframes) during the design process.
+1. [Canva:](https://www.canva.com/)
+    - Canva is used to create the quiz logo and small plane image seen in the progress bar.
 1. [TinyPNG:](https://tinypng.com/)
-    - TinyPNG is used to optimize images used in the project.
+    - TinyPNG is used to optimize images used in the quiz and this README.
 1. [Miscrosoft Paint:](https://support.microsoft.com/en-us/windows/get-microsoft-paint-a6b9578c-ed1c-5b09-0699-4ed8115f9aa9)
-    - Microsoft Paint was used to crop and resize images and editing photos for the project.
+    - Microsoft Paint is used to crop and resize images and editing photos for the project.
 1. [Snip & Sketch:](https://www.microsoft.com/en-gb/p/snip-sketch/9mz95kl8mr0l)
-    - Snip & Sketch was used to screenshot the majority of images used for this README.
+    - Snip & Sketch is used to screenshot the majority of images used for this README.
 
 ## Testing
 
-The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
+The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project. If any were found during development, they were addressed.
 
 -   [W3C Markup Validator](https://validator.w3.org/#validate_by_input)
 
@@ -298,25 +300,23 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 <img src="assets/readme-images/jigsaw.png">
 
-## Testing
+## Testing Original User Stories
+
+Following are the original [User Stories](#user-stories) set out in the early design stages of the project. They were individually tested to see if each goal was satisfied against the completed project.
+
+--list original ones and check each one--
+
+## Google Chrome Lighthouse / Efficency Test ??
 
 Following are the Google Chrome Lighthouse results for each page.
 
-- Home page
+- Main menu and quiz area/ index.html
 
 <img src="assets/readme-images/lighthouse-index.png">
 
-- About Us page
+- End page / end.html
 
-<img src="assets/readme-images/lighthouse-about.png">
-
-- Contact Us page
-
-<img src="assets/readme-images/lighthouse-contact.png">
-
-- Shop page
-
-<img src="assets/readme-images/lighthouse-shop.png">
+<img src="assets/readme-images/lighthouse-end.png">
 
 
 ### Further Testing
@@ -328,9 +328,10 @@ Following are the Google Chrome Lighthouse results for each page.
 -   I had feedback throughout from Noémie herself, who gave guidance and a critical eye throughout.
 
 ### Bug Fixes
-Bug fixes were predominantly completed in real-time as soon as issues arose. This was to ensure the project would continue developing smoothly without serious, unmanagable bugs arising later that could drastically reduce development time or the layout and feel of the quiz.
+Bug fixes were predominantly completed in real-time as soon as any issues arose. This was to ensure the project would continue developing smoothly without serious, unmanagable bugs arising later that could drastically reduce development time or the layout and functioning of the quiz.
 
--   As seen from the style.css file, there is a lot of custom css. I manually adjusted each screen size and the layout, often times changing the display from flex/flexbox to inline on smaller screens - then adjusting the width of the containers.
+-   As seen from the style.css file, there is a lot of custom CSS. Media queries were used at different breakpoints - although time consuming, it was vital to invest time into this to ensure the quiz was functioning correctly on various displays to enure a major [User Targets](#as-a-new-user) was met. Some JavaScript tweaks were also implemented to alter the class width at different stages of the quiz e.g. the main menu, quiz itself or the end.
+
 -   There was an issue on the iPad where the navbar would push the white background and links down to cover the 'offer banner' below. This was due to my custom padding settings overriding bootstraps own classes. This was resolved by changing it's property to "width: max-content" on a media query from 768px and up.
 
 -   There was an issue on smaller screens where the footer social media links - via Font Awesome icons - were stacking untidily and creating padding issues. This was resolved by creating a media query to reduce the icon sizes at the relevant breakpoint for smaller screens.
@@ -339,8 +340,7 @@ Bug fixes were predominantly completed in real-time as soon as issues arose. Thi
 
 ### Known Bugs
 
--   The navbar menu links are slightly off-centre, although the navbar is responsive and moves with the width of the screen.
--   The footer can rise up when there is a lack of content on a webpage. This is something to consider for future content adjustments.
+-   The background image (maps.jpg) repeats slightly towards the very bottom of the Surface Pro 7 (912px x 1368px) device.
 
 ## Deployment
 
@@ -417,7 +417,9 @@ Later on in the development I removed the majority of the bootstrap code and bui
 
 -   The main background image (maps.jpg) - Photo by Andrew Neel from Pexels found [here](https://www.pexels.com/photo/assorted-map-pieces-2859169/)
 
--   AThe logo was created using Canva
+-   The logo was created using Canva
+
+-   The plane image for the progress bar was created using Canva
 
 ### Acknowledgements
 

@@ -34,6 +34,8 @@ const highscoresDiv = document.getElementById('high-container');
 const highScoresList = document.querySelector('#highScoresList');
 const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 
+
+
 // const endDiv = document.getElementById('end-container');
 
 // const question = document.querySelector('#question');
@@ -55,6 +57,14 @@ let acceptingAnswers = false;
 let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
+
+//with help from mentor
+let correctAnswers = 0;
+
+
+
+
+
 
 /*list of questions*/
 // let questions = [
@@ -165,7 +175,7 @@ getNewQuestion = () => {
     }
 
     questionCounter++;
-    progressText.innerText = `Destination: ${questionCounter} / ${MAX_QUESTIONS}`;
+    progressText.innerText = `Question: ${questionCounter} / ${MAX_QUESTIONS}`;
     // progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`
     // plane.style.left = "100%"
     
@@ -202,8 +212,12 @@ choices.forEach(choice => {
         // let widthLet = 0;
         // let x = document.getElementById("progressBarFull");
         if(classToApply === 'correct') {
+            correctAnswers = (correctAnswers + 1);
+            
+            console.log(correctAnswers);
             incrementScore(SCORE_POINTS);
-            progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`;
+            // progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`;
+            progressBarFull.style.width = `${correctAnswers * 10}%`;
             plane.style.left = "100%";
             // document.getElementById("progressBarFull").style.width = "50%";
             // let increaseWidth = 0;
