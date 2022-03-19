@@ -8,7 +8,7 @@ This is the first interactive quiz the company has launched, announcing themselv
 
 ### Quiz premis and rules:
 
-A classic geogrpahy quiz, suitable to single or multiple players of all ages. The Globe Trotter Quiz is a multiple-choice quiz where the user is presented with 10 questions, each correct answer worth 2500 air miles. The goal? To answer 10 correct answers totalling a whopping 25,000 air miles - about the same distance it is to travel around the globe! See if you can travel to the top of the High Scores list!
+A classic geogrpahy quiz, suitable to single or multiple players of all ages. The Globe Trotter Quiz is a multiple-choice quiz where the user is presented with 10 questions, each correct answer worth 2500 miles. The goal? To answer 10 correct answers totalling a whopping 25,000 miles - about the same distance it is to travel around the globe! See if you can travel to the top of the High Scores list!
 
 
 
@@ -23,7 +23,7 @@ The quiz generates 1 question at a time, with 4 multiple choice options as answe
 The player clicks on the buttons/answers and the quiz and a visual prompt is given via the colour change to signify the players selection was correct (green) or incorrect (red).
 The quiz automatically displayes the next question after a short delay.
 There are a total of 10 questions to answer.
-The end screen for the quiz gives the total amount of Air Miles amassed.
+The end screen for the quiz gives the total amount of 'miles travelled'.
 A player can enter their name to save their high score to the quiz's database.
 The player accumilates air miles as a scoring system, with each correct answer awarded 5000 miles.
 
@@ -61,10 +61,10 @@ Following are the goals that the quiz should provide for each user.
 
 
 ## Design
-Once the user goals and the projects intentions were set out, the next step was to design the aesthetic aspects of the Globe Trotter quiz.
+Once the user goals and the projects intentions were set out, the next step was to design the aesthetic aspects of The Globe Trotter quiz.
 
 ### Wireframes
-Wireframes were drawn using [Balsamiq](https://balsamiq.com/) at the beginning of the project. They were referenced throughout the design and building of the quiz. Following are a series of images showing the Globe Trotter Quiz on the three main screen sizes: desktop, tablet and mobile. Every major section of the quiz is also included.
+Wireframes were drawn using [Balsamiq](https://balsamiq.com/) at the beginning of the project. They were referenced throughout the design and building of the quiz. Following are a series of images showing The Globe Trotter Quiz on the three main screen sizes: desktop, tablet and mobile. Every major section of the quiz is also included.
 
 #### Desktop
 
@@ -145,24 +145,22 @@ Wireframes were drawn using [Balsamiq](https://balsamiq.com/) at the beginning o
 <img src="wireframes/mobile-end.png">
 
 #### Colour Palette
-- Colour is vital for the design of this quiz.
-
-- The primary colours used on the Globe Trotter Quiz are ash gray (#ced4c6), puce (#c6878f) and white (#fff).
-There is a hint of navy purple (#5b507a) found to better contrast the text with the hero image on the index.html home page.
-The text colour is predominantly a dark black (#000) to ensure a greater contrast between the mellow, pastel colour palette and background.
-There is some text content in white - especially when the background is a darker colour or shade.
-
-
+- The colour palette has an old-fashioned, nostalgic theme which pays homage to classic travel and adventure when combined with the imagery. This contrasted well with a modern and functional quiz in terms of layout, and the general theme of travelling around the world by plane. The background image (maps.jpg) provides an array of browns, yellows, black and some shaded/darker colours.
+- The heading and the game container use the same colour (rgba(230,236,240)), with a slight opcaity for the container, allowing the background image to be seen, but not intefere too much with the flow and visibility of the quiz/content.
+- By default, all buttons have a colour of "cultured/ whitesmoke" (rgb(239, 239, 239)) and that simplicity allows other colours and content to shine.
+- The text colour is mostly black (rgb(0,0,0)) to ensure a greater contrast between the buttons and container colours. 
+- The most important text is a gold or "cyber yellow" (rgb(255,210,0)) colour. This colour is synonymous with victory, champions and has forever been a highly desirable and attractive colour. The reason for choosing this colour is obviously to entice the user to keep totalling up the golden numbers during the quz, and also to challenge the users to reach the top of the High Score list.
+- A slightly opaque antique brass (rgb(187 148 133) is often for shadows, to help bring depth and hghlight some interactive features such as buttons.
 
 <img src="assets/readme-images/palette.png">
 
-- The ash gray (#ced4c6) colour came from using [Eye Dropper](https://eyedropper.org/). This colour picker tool was used to pick the colour from the company logo used on the Bakes by Noémie [Instagram](https://www.instagram.com/bakesbynoemie/) page.
+- It was decided early on in the design stage that the gold (cyber yellow) colour would be important for the quiz. Some of the other colours were chosen around having this colour in mind, especially to ensure the colour was a focal point - always drawing the user's eyes to it and never obstructed or poorly contrasted by other colours. Therefore, the black font colour and the container and button colours provided the perfect colours to balance this. These combinations helped highlight the importance of providing a visually appealing quiz but also with high contrast and readability a priority.
 
-- It was decided early on in the design stage that this would be the background colour. A pastel colour that was fairly neutral and in no way distracting. It provided a perfect base to layer other colours and content on top of. It is both a visually appealing design and also satisfies the importance of providing an accessible website with high contrast.
+- Here is the [Contrast Checker](https://webaim.org/resources/contrastchecker/) tool used to support this:
 
 <img src="assets/readme-images/contrast.png">
 
-- The [Coolors](https://coolors.co/ced4c6-c6878f-5b507a) website was then used to help choose colours that would compliment the background colour. This helped set-up the vision of creating an aesthetically pleasing website and of course balance everything nicely. The white and black were added to further help with contrast and readability.
+
 
 #### Images
 - The use of photography is vital in creating allure and desire, especially for a bakery. Customers are drawn by what they see. The photographs used are large, light/bright, colourful and hope to entice customers into visiting the shop and purchasing the baked goods.
@@ -171,11 +169,7 @@ There is some text content in white - especially when the background is a darker
 Therefore, it was important that the background image provided along with the CSS styling and colour palette etc. that the game was travel related. The background image provided a great colour scheme and theme which also provided clear contrast and highlighted the actural game area from the background itself. The following image was used.
 
 #### Font
--  The website uses the Poppins font. It seems to be a very popular option amongst youtubers and provides that clean, clear style without compromising on readability. This is available for free via [Google Fonts](https://fonts.google.com/) and imported via CSS. Sans Serif is used as a secondary option in case of failure to import.  font in case for any reason the font isn't being imported into the site correctly. Montserrat is a clean font used frequently in programming, so it is both attractive and appropriate.
-- A more stylistic font was initially considered, but due to the readability it was opted to go for a very clean, clear and readable font.
-
-
-<img src="assets/readme-images/desktop-col-index.html.png">
+-  The website uses the Poppins font. It provides that clean, clear style without compromising on readability - a vital design feature for any quiz. This is available for free via [Google Fonts](https://fonts.google.com/) and imported via CSS. Sans Serif is used as a secondary option in case of failure to import  the font into the site correctly. Poppins is a clean font used frequently in designs, so it is both attractive and appropriate.
 
 ## Accessibility
 Extremely important aspect.
@@ -198,7 +192,6 @@ Extremely important aspect.
 As shown on the images below, the quiz logo and title is very clear and bright. The centerpiece, always there and clickable. It shows off the quiz nicely, it's obviously related to geogrpahy and serves as a constant reminder to the user about where they are and what they are playing. The logo itself is a clickable link (a cursor appears when hovering over), and returns the user back to the home page at any time. 
 
 <img src="assets/readme-images/logo-click.png">
-
 
 #### Toggle Menu Elements
 
@@ -263,7 +256,7 @@ Each icon for the social media links turn gold when the user hovers over them to
 
 -   [HTML5](https://en.wikipedia.org/wiki/HTML5)
 -   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
--   [JS](https://en.wikipedia.org/wiki/JavaScript)
+-   [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
 ### Frameworks, Libraries & Programs Used
 
@@ -279,6 +272,10 @@ Each icon for the social media links turn gold when the user hovers over them to
     - GitHub is used to store the projects code after being pushed from Git.
 1. [Balsamiq:](https://balsamiq.com/)
     - Balsamiq is used to create the [wireframes](#wireframes) during the design process.
+1. [Eye Dropper](https://eyedropper.org/).
+    - This colour picker tool was used to to pick and experiment with colours.
+1. [Coolors](https://coolors.co/)
+    - This tool was used to to setup the colour palette [here](#colour-palette).
 1. [Canva:](https://www.canva.com/)
     - Canva is used to create the quiz logo and small plane image seen in the progress bar.
 1. [TinyPNG:](https://tinypng.com/)
@@ -398,7 +395,7 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 ### Code
 -   At the early stages of the development, the [How to Make a Quiz App using HTML CSS Javascript - Vanilla Javascript Project for Beginners Tutorial](https://www.youtube.com/watch?v=f4fB9Xg2JEY&list=FLoLMoJL7IfiYl8F3sN_CEqQ&index=16) tutorial was followed and the code was used as the basis of the quiz. Original code was later added alongside that found in the YouTube video to suit the quiz. Code tweaks were made to suit this quiz, pre-determined code edited or removed along with adjustments and restyling to the majority of the CSS found in the credited video. Upon further searching, it seems that [Build a Quiz App - Intro](https://www.youtube.com/watch?v=u98ROZjBWy8&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx) and that playlist of videos may be what the YouTube video I had followed to begin with was also inpired by.
 
-- The API aspect of the quiz was introduced thanks to the [Build a Quiz App (11) - Fetch API to Load Questions API](https://www.youtube.com/watch?v=3aKOQn2NPFs&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&index=12) tutorial, to which edits were then made.
+-   The API aspect of the quiz was introduced thanks to the [Build a Quiz App (11) - Fetch API to Load Questions API](https://www.youtube.com/watch?v=3aKOQn2NPFs&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&index=12) tutorial, to which edits were then made.
 
 -   The ability to toggle (show and hide) content via the How To Play, Contact and High Score buttons on the main menu screen came from W3Sschools documentation found [here](https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp), and a separate sournce [here](https://sebhastian.com/javascript-show-hide-div-onclick-toggle/) which was then edited to suit the project, along with additional customization.
 

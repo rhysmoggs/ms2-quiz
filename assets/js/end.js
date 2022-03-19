@@ -20,7 +20,7 @@ const MAX_HIGH_SCORES = 5
 
 
 // display user's final score on end screen
-finalScore.innerText = mostRecentScore + ' Air Miles';
+finalScore.innerText = mostRecentScore + ' miles travelled';
 
 
 
