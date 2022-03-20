@@ -10,7 +10,7 @@ This is the first interactive quiz the company has launched, announcing themselv
 
 A classic geography quiz, suitable to single or multiple players of all ages. The Globe Trotter Quiz is a multiple-choice quiz where the user is presented with 10 questions, each correct answer worth 2500 miles. The goal? To answer 10 correct answers totalling a whopping 25,000 miles - about the same distance it is to travel around the globe! See if you can travel to the top of the High Scores list!
 
-The quiz will clearly display information for new and returning customers including the creators contact information via social media links. The website is fully responsible on a range of devices - from hand-held devices to larger screens such as monitors or even TVs. This is to ensure that as many people as possible can play the quiz and enjoy this journey.
+The quiz will clearly display information for new and returning customers including the creators contact information via social media links. The quiz is fully responsible on a range of devices - from hand-held devices to larger screens such as monitors or even TVs. This is to ensure that as many people as possible can play the quiz and enjoy this journey.
 
 The quiz can be played by one person or as many as would like to partake. There are rumours of a more child-friendly version to follow with additions of sound and pictures and even theme changes.
 
@@ -157,13 +157,13 @@ Wireframes were drawn using [Balsamiq](https://balsamiq.com/) at the beginning o
 - Logo
 
 #### Font
--  The website uses the Poppins font. It provides that clean, clear style without compromising on readability - a vital design feature for any quiz. This is available for free via [Google Fonts](https://fonts.google.com/) and imported via CSS. Sans Serif is used as a secondary option in case of failure to import  the font into the site correctly. Poppins is a clean font used frequently in designs, so it is both attractive and appropriate.
+-  The Globe Trotter Quiz uses the Poppins font. It provides that clean, clear style without compromising on readability - a vital design feature for any quiz. This is available for free via [Google Fonts](https://fonts.google.com/) and imported via CSS. Sans Serif is used as a secondary option in case of failure to import  the font into the quiz correctly. Poppins is a clean font used frequently in designs, so it is both attractive and appropriate.
 
 ## Accessibility
 Extremely important aspect.
 -   Semantic design.
 -   The use of alt to describe images and other content.
--   Aria-labelledby to link sections of each webpage together.
+-   Aria-labelledby to link sections.
 -   Colour and contrast considerations and testing.
 -   Adding labels to forms.
 
@@ -372,7 +372,7 @@ Following are the Google Chrome Lighthouse results for each page.
 
 ### Further Testing
 
--   Testing was predominantly made using Google Chrome's own developer tools and 'Inspect Mode', although testing was done sporadically on alternative browsers with each major addition to the website e.g new content, style updates and responsive changes via media queries.
+-   Testing was predominantly made using Google Chrome's own developer tools and 'Inspect Mode', although testing was done sporadically on alternative browsers with each major addition to the quiz e.g new content, style updates and responsive changes via media queries.
 -   Console.log() function was used for JavaScript code development.
 -   All interactive elements of the quiz were tested. Button functions, clicking, hiding/showing content, user input, links and general flow of quiz. Bugs were fixed as they arose.
 -   Testing that the score updated correctly, incrementing on correct answers only and progressBar progression to reflect this. The same process was done for incorrect answers and various combinations of correct and incorrect answers and users input. The final score was also checked against the in-game score for accuracy and again when submitting to the High Scores area.

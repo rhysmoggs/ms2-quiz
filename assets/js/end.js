@@ -17,19 +17,15 @@ const highScores = JSON.parse(localStorage.getItem('highScores')) || []
 // maximum number of saved usernames and scores listed on High Scores list
 const MAX_HIGH_SCORES = 5
 
-
-
 // display user's final score on end screen
 finalScore.innerText = mostRecentScore + ' miles travelled';
-
-
 
 // 
 username.addEventListener('keyup', () => {
     saveScoreBtn.disabled = !username.value
 })
 
-//
+// saves highscore to storage, organizes them and add only allows the highest 5
 saveHighScore = e => {
     e.preventDefault()
 
