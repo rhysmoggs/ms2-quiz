@@ -1,0 +1,221 @@
+[33mcommit ffd45947880d4ca65ec26b936ae62dcfc811c967[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: rhysmoggs <rhysmoggs@hotmail.com>
+Date:   Sat Mar 19 23:36:15 2022 +0000
+
+    improved contrast and responsive aspects in style.css
+
+[33mcommit 2629347ed4f0fd3b661efe14e57b0a27e7765822[m
+Author: rhysmoggs <rhysmoggs@hotmail.com>
+Date:   Sat Mar 19 18:37:17 2022 +0000
+
+    update README.md
+
+[33mcommit 288bc0a713edd665de633e2b8647de97d622fbdb[m
+Author: rhysmoggs <rhysmoggs@hotmail.com>
+Date:   Sat Mar 19 14:57:22 2022 +0000
+
+    edit main.js to link correct answers to progress bar
+
+[33mcommit fff6c5d7d07a7c4d440a41d5698a94afb0040b0f[m
+Author: rhysmoggs <rhysmoggs@hotmail.com>
+Date:   Fri Mar 18 21:58:54 2022 +0000
+
+    update README.md
+
+[33mcommit 95082dc9531c3150ea3b87b602dae726a32dd925[m
+Author: rhysmoggs <rhysmoggs@hotmail.com>
+Date:   Fri Mar 18 19:57:13 2022 +0000
+
+    add further images and info to README.md
+
+[33mcommit a98f5f765e4a888082387db9736e6ca183ffcb5d[m
+Author: rhysmoggs <rhysmoggs@hotmail.com>
+Date:   Wed Mar 16 19:03:03 2022 +0000
+
+    add further images and info to README.md
+
+[33mcommit 6e4c257a5cd6b811882e53a10a3d04ce5f06432f[m
+Author: rhysmoggs <rhysmoggs@hotmail.com>
+Date:   Wed Mar 16 18:15:33 2022 +0000
+
+    add images to README.md
+
+[33mcommit 8333cfc9ea3685bf8cd7a85e59d799bc82b8e884[m
+Author: rhysmoggs <rhysmoggs@hotmail.com>
+Date:   Wed Mar 16 17:17:09 2022 +0000
+
+    add changes to style.css to better layout
+
+[33mcommit c6aa106c48a1972a68bd1459f1dac351225fcc9f[m
+Author: rhysmoggs <rhysmoggs@hotmail.com>
+Date:   Wed Mar 16 15:23:11 2022 +0000
+
+    add api to main.js to auto-populate question and answer containers
+
+[33mcommit 5bfac1bf966c762441e40413c556c742cc5e5105[m
+Author: rhysmoggs <rhysmoggs@hotmail.com>
+Date:   Wed Mar 16 13:00:47 2022 +0000
+
+    add plane.png to  progressBar in index.html and style.css
+
+[33mcommit 0eecfdfdc61c6cfdcfc9e877411d301f87871e98[m
+Author: rhysmoggs <rhysmoggs@hotmail.com>
+Date:   Tue Mar 15 21:00:16 2022 +0000
+
+    update README.md
+
+[33mcommit ce05fe65688ee1292e960daa76720858dd25e648[m
+Author: rhysmoggs <rhysmoggs@hotmail.com>
+Date:   Tue Mar 15 08:51:25 2022 +0000
+
+    edit media queries for better responsive design in style.css
+
+[33mcommit ff638ecc56293f2e1d5d6bf9d73866a28ae1f657[m
+Author: rhysmoggs <rhysmoggs@hotmail.com>
+Date:   Mon Mar 14 17:26:39 2022 +0000
+
+    edit media queries for better responsive design in style.css
+
+[33mcommit 534758559af56feb2e636a423048ef1e02c01e64[m
+Author: rhysmoggs <rhysmoggs@hotmail.com>
+Date:   Mon Mar 14 15:09:40 2022 +0000
+
+    add media queries to style.css
+
+[33mcommit bc1c377d68aa4dcd673dbd06a7d62a3dc013bd15[m
+Author: rhysmoggs <rhysmoggs@hotmail.com>
+Date:   Mon Mar 14 11:23:46 2022 +0000
+
+    add mobile wireframes to README.md
+
+[33mcommit 9ccd221a6f5f4e5a584022a83c63b14f90968d39[m
+Author: rhysmoggs <rhysmoggs@hotmail.com>
+Date:   Mon Mar 14 11:13:20 2022 +0000
+
+    add tablet wireframes to README.md
+
+[33mcommit 61e25af9b7ca7cf99368f39d95b8401d560782c6[m
+Author: rhysmoggs <rhysmoggs@hotmail.com>
+Date:   Mon Mar 14 11:03:30 2022 +0000
+
+    add desktop wireframes to README.md
+
+[33mcommit 1fb9b8fcfb4002e7b24078f9c62e0552bb35eba4[m
+Author: rhysmoggs <rhysmoggs@hotmail.com>
+Date:   Mon Mar 14 09:31:50 2022 +0000
+
+    add wireframes folder and update README.md
+
+[33mcommit 208aec3db71c035926aaf8bf8a2bd0cf051fe28f[m
+Author: rhysmoggs <rhysmoggs@hotmail.com>
+Date:   Sun Mar 13 20:52:12 2022 +0000
+
+    add game-area style to style.css and main.js
+
+[33mcommit 4daf57200e6f488f84253fbb06745fcc0cfa516b[m
+Author: rhysmoggs <rhysmoggs@hotmail.com>
+Date:   Sun Mar 13 17:36:28 2022 +0000
+
+    add style to logo
+
+[33mcommit fb53733da9d5481c00da5e22bed2487fdaf416e9[m
+Author: rhysmoggs <rhysmoggs@hotmail.com>
+Date:   Sun Mar 13 15:53:22 2022 +0000
+
+    add save score to storage in main.js
+
+[33mcommit 2fdd800d94407eefa8a0ea4fd0c59d245f003ac3[m
+Author: rhysmoggs <rhysmoggs@hotmail.com>
+Date:   Sun Mar 13 15:21:30 2022 +0000
+
+    add event listener and function in main.js for logo click
+
+[33mcommit ee378942b32882cee29d13513357fbb0253137a6[m
+Author: rhysmoggs <rhysmoggs@hotmail.com>
+Date:   Sun Mar 13 14:50:31 2022 +0000
+
+    add logo.png to index.html and end.html then add style
+
+[33mcommit 42c188280d468aa019dcd0a7e1d6db8fb1ac5954[m
+Author: rhysmoggs <rhysmoggs@hotmail.com>
+Date:   Sun Mar 13 09:26:42 2022 +0000
+
+    add event listener and function in end.js for Home button
+
+[33mcommit e1b246abca5bad3b169af34ba236e73b42a2c250[m
+Author: rhysmoggs <rhysmoggs@hotmail.com>
+Date:   Sat Mar 12 21:53:51 2022 +0000
+
+    add style to hover buttons and choice containers
+
+[33mcommit d1870b06965f0d8a14c732c3d7a223ac1fe6973c[m
+Author: rhysmoggs <rhysmoggs@hotmail.com>
+Date:   Sat Mar 12 18:31:33 2022 +0000
+
+    add functions in main.js for buttons to hide/show content
+
+[33mcommit 6011226b10000641663cef13263cda9990b8bbdc[m
+Author: rhysmoggs <rhysmoggs@hotmail.com>
+Date:   Sat Mar 12 15:35:19 2022 +0000
+
+    add button style to hover and input in style.css
+
+[33mcommit 18b6e172cd2fe8238e345b220559bb6f2abc63ac[m
+Author: rhysmoggs <rhysmoggs@hotmail.com>
+Date:   Sat Mar 12 13:58:23 2022 +0000
+
+    add scoring system to main.js and generate next question function
+
+[33mcommit 5838ef20ff93479454c2815a87a24d58d708a77b[m
+Author: rhysmoggs <rhysmoggs@hotmail.com>
+Date:   Sat Mar 12 13:50:56 2022 +0000
+
+    add finalScore to index.html and end.html with styling
+
+[33mcommit 156308abb7c148ff0305c1e55994eb0e58cf6c46[m
+Author: rhysmoggs <rhysmoggs@hotmail.com>
+Date:   Sat Mar 12 13:31:10 2022 +0000
+
+    create end.html
+
+[33mcommit b31dd337cb3b6e6dc60df3f89503ad646a54fd57[m
+Author: rhysmoggs <rhysmoggs@hotmail.com>
+Date:   Sat Mar 12 13:19:17 2022 +0000
+
+    add load dom function to main.js and variables
+
+[33mcommit c1a229aa3a74d0034fc30638d1f1076a5c2a1e54[m
+Author: rhysmoggs <rhysmoggs@hotmail.com>
+Date:   Sat Mar 12 13:11:24 2022 +0000
+
+    add buttons to index.html and style.css
+
+[33mcommit 90f2b4952e01852aa7ee08a64b8987c4d631f6ae[m
+Author: rhysmoggs <rhysmoggs@hotmail.com>
+Date:   Sat Mar 12 12:33:34 2022 +0000
+
+    add hud, heading to index.html and style.css
+
+[33mcommit 80c56828d78371750d1ac955622b2c19c9d3efdc[m
+Author: rhysmoggs <rhysmoggs@hotmail.com>
+Date:   Sat Mar 12 12:02:43 2022 +0000
+
+    add question container to index.html and style.css and maps.jpg image
+
+[33mcommit 3ad944350d4e71047a6bad2f8c26d28ede6a13e3[m
+Author: rhysmoggs <rhysmoggs@hotmail.com>
+Date:   Sat Mar 12 11:26:42 2022 +0000
+
+    create main.js file and add main game area to index.html
+
+[33mcommit cb8ebb24c152ad916d2e8ec0a9409495574c48e9[m
+Author: rhysmoggs <rhysmoggs@hotmail.com>
+Date:   Thu Mar 10 13:39:57 2022 +0000
+
+    Initial commit
+
+[33mcommit 3073fe38032aa4fa141f50b1ebc3651d0156bedc[m
+Author: rhysmoggs <92308810+rhysmoggs@users.noreply.github.com>
+Date:   Thu Mar 10 13:23:15 2022 +0000
+
+    Initial commit

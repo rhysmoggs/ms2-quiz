@@ -102,8 +102,8 @@ h2 {
 .choice-container:hover {
     cursor: pointer;
     box-shadow: 3px 7px 16px 5px rgb(187 148 133 / 60%);
-    transform: scale(1.02);
-    transform: transform 100ms;
+    transition: transform 150ms;
+    transform: scale(1.03);
 }
 
 .controls-area {
