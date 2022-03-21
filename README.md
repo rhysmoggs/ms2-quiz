@@ -8,7 +8,7 @@ This is the first interactive quiz the company has launched, announcing themselv
 
 ### Quiz premis and rules:
 
-A classic geography quiz, suitable to single or multiple players of all ages. The Globe Trotter Quiz is a multiple-choice quiz where the user is presented with 10 questions, each correct answer worth 2500 miles. The goal? To answer 10 correct answers totalling a whopping 25,000 miles - about the same distance it is to travel around the globe! See if you can travel to the top of the High Scores list!
+A classic geography quiz, suitable to single or multiple players of all ages. The Globe Trotter Quiz is a multiple-choice quiz where the user is presented with 10 questions, each correct answer worth 2500 miles. The goal? To answer 10 correct answers totalling a whopping 25,000 miles - about the same distance it is tofly around the globe! See if you can travel to the top of the High Scores list!
 
 The quiz will clearly display information for new and returning customers including the creators contact information via social media links. The quiz is fully responsible on a range of devices - from hand-held devices to larger screens such as monitors or even TVs. This is to ensure that as many people as possible can play the quiz and enjoy this journey.
 
@@ -295,6 +295,8 @@ Each icon for the social media links turn gold when the user hovers over them to
     - Microsoft Paint is used to crop and resize images and editing photos for the project.
 1. [Snip & Sketch:](https://www.microsoft.com/en-gb/p/snip-sketch/9mz95kl8mr0l)
     - Snip & Sketch is used to screenshot the majority of images used for this README.
+1. [WPS Office:](https://www.wps.com/)
+    - WPS Office is used to create the table for the [Testing Quiz Flow and Functionality](#testing-quiz-flow-and-functionality) and README.md spell-checking.
 
 ## Testing
 
@@ -369,6 +371,19 @@ Following are the Google Chrome Lighthouse results for each page.
 
 <img src="assets/readme-images/lighthouse-end.png">
 
+### Testing Quiz Flow and Functionality
+
+All of the following tests were repeated multiple times to ensure a fair test. The same tests were then repeated multiple times on different browsers (Google Chrome, Mozilla Firefox, Microsoft Edge and Opera) and then finally the same tests were repeated again on multiple occasions and for different devices (mobile phones, tablets, laptops and larger screen sizes).
+
+#### - Main Menu Test
+<img src="assets/readme-images/main-menu-test.png">
+
+#### - Quiz Area Test
+<img src="assets/readme-images/quiz-area-test.png">
+<img src="assets/readme-images/quiz-area-test2.png">
+
+#### - End Screen Test
+<img src="assets/readme-images/end-screen-test.png">
 
 ### Further Testing
 
@@ -461,11 +476,15 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ### Content & Media
 
--   The main background image (maps.jpg) - Photo by Andrew Neel from Pexels found [here](https://www.pexels.com/photo/assorted-map-pieces-2859169/)
+-   The questions and answers are all generated via an API from [The Open Trivia Database](https://opentdb.com/api_config.php).
+
+-   The main background image (maps.jpg) - Photo by Andrew Neel from Pexels found [here](https://www.pexels.com/photo/assorted-map-pieces-2859169/).
 
 -   The logo (logo.png) was created using Canva.
 
 -   The plane (plane.png) image for the progress bar was created using Canva.
+
+-   Unless mentioned in the [Code](#code) section, all other code is written by the developer.
 
 ### Acknowledgements
 

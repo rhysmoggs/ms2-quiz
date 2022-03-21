@@ -10,53 +10,52 @@ const mostRecentScore = localStorage.getItem('mostRecentScore');
 
 const homeButton = document.getElementById('home-btn');
 
-const highScores = JSON.parse(localStorage.getItem('highScores')) || []
-
+const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
 
 
 // maximum number of saved usernames and scores listed on High Scores list
-const MAX_HIGH_SCORES = 5
+const MAX_HIGH_SCORES = 5;
 
 // display user's final score on end screen
 finalScore.innerText = mostRecentScore + ' miles travelled';
 
-// 
+// event listener added to input field, which then enables Save button
 username.addEventListener('keyup', () => {
-    saveScoreBtn.disabled = !username.value
-})
+    saveScoreBtn.disabled = !username.value;
+});
 
-// saves highscore to storage, organizes them and add only allows the highest 5
+/*saves highscore to storage, organizes them and add only allows the highest 5*/
 saveHighScore = e => {
-    e.preventDefault()
+    e.preventDefault();
 
     const score = {
         score: mostRecentScore,
         name: username.value
-    }
+    };
 
-    highScores.push(score)
+    highScores.push(score);
 
     highScores.sort((a,b) => {
-        return b.score - a.score
-    })
+        return b.score - a.score;
+    });
 
-    highScores.splice(5)
+    highScores.splice(5);
 
-    localStorage.setItem('highScores', JSON.stringify(highScores))
-    window.location.assign('/')
-}
+    localStorage.setItem('highScores', JSON.stringify(highScores));
+    window.location.assign('index.html');
+};
 
 /*event listener set to the home button*/
 homeButton.addEventListener("click", goHome);
 
 /*goes to home page*/
 function goHome() {
-    window.location.assign('/');
+    window.location.assign('index.html');
 }
 
 /*event listener set to the logo button that reloads the home page*/
 logoReload.addEventListener("click", reloadGame);
 
 function reloadGame() {
-    window.location.replace("../index.html");
+    window.location.assign('index.html');
 }

@@ -34,10 +34,6 @@ const highscoresDiv = document.getElementById('high-container');
 const highScoresList = document.querySelector('#highScoresList');
 const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 
-
-
-// const endDiv = document.getElementById('end-container');
-
 // const question = document.querySelector('#question');
 const question = document.getElementById('question');
 // const choices = Array.from(document.querySelectorAll('.choice-text'));
@@ -104,7 +100,7 @@ const MAX_QUESTIONS = 10;
 logoReload.addEventListener("click", reloadGame);
 
 function reloadGame() {
-    window.location.replace("../index.html");
+    window.location.assign('index.html');
 }
 
 /*start the game*/
@@ -138,13 +134,11 @@ startButton.addEventListener("click", startGame);
 getNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
-        return window.location.assign('/end.html');
+        return window.location.assign('end.html');
     }
 
     questionCounter++;
     progressText.innerText = `Question: ${questionCounter} / ${MAX_QUESTIONS}`;
-    // progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`
-    // plane.style.left = "100%"
     
     const questionsIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionsIndex];
@@ -160,7 +154,7 @@ getNewQuestion = () => {
     acceptingAnswers = true;
 };
 
-/*check if the answer is correct/incorrect call it checkAnswer instead?*/
+/*check if the answer is correct/incorrect*/
 choices.forEach(choice => {
     choice.addEventListener('click', e => {
         if(!acceptingAnswers) return;
@@ -176,7 +170,6 @@ choices.forEach(choice => {
             
             console.log(correctAnswers);
             incrementScore(SCORE_POINTS);
-            // progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`;
             progressBarFull.style.width = `${correctAnswers * 10}%`;
             plane.style.left = "100%";
         }
@@ -197,14 +190,14 @@ incrementScore = num => {
     scoreText.innerText = score + 'miles travelled';
 };
 
-//list to add score to highscore list
+/*list to add score to highscore list*/
 highScoresList.innerHTML =
 highScores.map(score => {
     return `<p class="high-score">${score.name} - ${score.score} miles travelled</p>`;
 }).join("");
 
 
-//show or hide High Score section
+/*show or hide High Scores section*/
 highscoresButton.onclick = function () {
     if (highscoresDiv.style.display !== "block") {
         highscoresDiv.style.display = "block";
@@ -221,7 +214,7 @@ highscoresButton.onclick = function () {
     }
 };
 
-//show or hide Hot To Play section
+/*show or hide Hot To Play section*/
 howToButton.onclick = function () {
     if (howToDiv.style.display !== "block") {
         howToDiv.style.display = "block";
@@ -238,7 +231,7 @@ howToButton.onclick = function () {
     }
 };
 
-//show or hide Contact section
+/*show or hide Contact section*/
 contactButton.onclick = function () {
     if (contactDiv.style.display !== "block") {
         contactDiv.style.display = "block";
