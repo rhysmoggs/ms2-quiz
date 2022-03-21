@@ -3,22 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Globe Trotter Quiz</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/08c2eb7d5e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+    <title>Globe Trotter Quiz</title>
 </head>
 <body>
 
     <!--heading-->
-    <h1 class="heading"><img aria-label="clickable logo that goes to game home page" id="logo" class="logo" src="assets/images/logo.png" alt="game logo and title"><span>Globe Trotter Quiz</span></h1>
+    <h1 class="heading"><img aria-label="clickable logo that goes to quiz main menu" id="logo" class="logo" src="assets/images/logo.png" alt="game logo and title"><span id="span-heading">Globe Trotter Quiz</span></h1>
 
     <!--game area-->
     <div class="game-area">
         <div class="container">
             <div id="end-container" class="flex-center flex-column">
-                <h1 id="finalScore">0 miles travelled</h1>
+                <h2 id="end-text">Congratulations!</h2>
+                <h2 id="finalScore">0 miles travelled</h2>
                 <form class="end-form-container">
-                    <h2 id="end-text">Enter your name below to save your score!</h2>
+                    <!-- <h2 id="end-text">Enter your name below to save your score!</h2> -->
                     <input aria-label="input for player name" type="text" name="name" id="username" placeholder="Enter your name">
                     <button aria-label="button saves player score" class="btn" id="saveScoreBtn" type="submit" onclick="saveHighScore(event)" disabled>Save</button>
                 </form>

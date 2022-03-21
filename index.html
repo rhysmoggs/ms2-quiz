@@ -12,7 +12,7 @@
 <body>
 
     <!--heading-->
-    <h1 class="heading"><img aria-label="clickable logo that goes to game home page" id="logo" class="logo" src="assets/images/logo.png" alt="game logo and title"><span>Globe Trotter Quiz</span></h1>
+    <h1 class="heading"><img aria-label="clickable logo that goes to quiz main menu" id="logo" class="logo" src="assets/images/logo.png" alt="game logo and title"><span id="span-heading">Globe Trotter Quiz</span></h1>
 
     <!--game area-->
     <div id="game-area" class="game-area">
@@ -20,7 +20,7 @@
             <div id="game" class="justify-center flex-column">
                 <div id="hud">
                     <div class="hud-item">
-                        <p id="progressText" class="hud-prefix">
+                        <p id="progressCounter">
                             Question
                         </p>
                         <div id="progressBar">
@@ -28,8 +28,8 @@
                         </div>
                     </div>
                     <div class="hud-item">
-                        <h2 class="hud-main-text" id="score">
-                            0 miles travelled
+                        <h2 id="score">
+                            <span id="span-score">0 miles travelled</span>
                         </h2>
                     </div>
                 </div>

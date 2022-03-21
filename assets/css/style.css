@@ -23,7 +23,7 @@ h1 {
     font-size: 2.5rem;
 }
 
-span {
+#span-heading {
     text-align: center;
     font-size: 1.9rem;
     position: absolute;
@@ -34,13 +34,40 @@ span {
     background: rgb(0,0,0);
 }
 
+#span-score {
+    background: rgb(187 148 133 / 60%);
+    padding: 0 1rem;
+    text-transform: uppercase;
+}
+
 h2 {
     font-size: 1.8rem;
     margin-bottom: 2rem;
 }
 
+#score {
+    color: rgb(255,210,0);
+    text-shadow: -1.5px 1px 1px rgb(0,0,0);
+    font-weight: bold;
+    letter-spacing: 0.3rem;
+    margin-bottom: 0.6rem;
+}
+
+#finalScore {
+    color: rgb(255,210,0);
+    text-shadow: -1.5px 1px 1px rgb(0,0,0);
+    font-weight: bold;
+    letter-spacing: 0.3rem;
+}
+
+#question {
+    font-size: 1.4rem;
+    margin-bottom: 1.8rem;
+}
+
 .logo {
     height: 220px;
+    width: 220px;
     cursor: pointer;
     /* padding-right: 5px; */
     /* vertical-align: middle; */
@@ -57,6 +84,11 @@ h2 {
     font-size: 0.8rem;
 }
 
+#end-text {
+    font-size: 1.8rem;
+    margin-bottom: 0;
+}
+
 /* game containers */
 
 .game-area {
@@ -64,7 +96,6 @@ h2 {
     border-radius: 6px;
     box-sizing: border-box;
     width: 85%;
-    height: auto;
     max-width: 830px;
     margin-top: 40px;
     margin-left: auto;
@@ -82,6 +113,7 @@ h2 {
 .container {
     width: 85%;
     margin: auto;
+    position: relative;
     /* padding: 25px 0; */
 }
 
@@ -109,8 +141,8 @@ h2 {
 .controls-area {
     width: 85%;
     margin: 0px auto;
-    display: grid;
-    justify-content: center;
+    /* display: grid;
+    justify-content: center; */
 }
 
 .hide {
@@ -121,10 +153,11 @@ h2 {
 
 .btn {
     width: 380px;
+    max-width: 100%;
     height: 60px;
     text-transform: uppercase;
     letter-spacing: 1.2px;
-    margin: 0.8rem;
+    margin: 0.8rem 0;
     text-align: center;
 }
 
@@ -162,22 +195,23 @@ h2 {
     justify-content: space-between;
 }
 
-.hud-prefix {
+#progressCounter {
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: rgb(0,0,0);
     text-align: center;
+    margin-bottom: 0.2rem;
 }
 
-.hud-main-text {
+/* .hud-main-text {
     text-align: center;
-}
+} */
 
 #progressBar {
     /* width: 10rem; */
     height: 1.5rem;
     border: 0.15rem solid rgb(0,0,0);
-    margin-top: 0.8rem;
+    margin-top: 0.5rem;
     border-radius: 50px;
     overflow: hidden;
 }
@@ -244,13 +278,6 @@ h2 {
 
 /*end.html*/
 
-#score, #finalScore {
-    color: rgb(255,210,0);
-    text-shadow: -1.5px 1px 1px rgb(0,0,0);
-    font-weight: bold;
-    letter-spacing: 0.5rem;
-}
-
 .end-form-container {
     width: 100%;
     display: flex;
@@ -262,8 +289,8 @@ h2 {
 input {
     margin-bottom: 1rem;
     width: 20rem;
-    padding: 1.5rem;
-    font-size: 1.8rem;
+    padding: 1.2rem;
+    font-size: 1.4rem;
     border: none;
     box-shadow: 0 0.4rem 1.4rem 0 rgba(187,148,133, 0.6);
 }
@@ -273,16 +300,17 @@ input::placeholder {
 }
 
 #username {
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
     width: 100%;
     outline: none;
 }
 
 /*media queries*/
-
+/* 
 @media only screen and (max-width: 320px) {
     .logo {
         height: 120px;
+        width: 120px;
     }
     span {
         font-size: 0.8rem;
@@ -314,9 +342,6 @@ input::placeholder {
 }
 
 @media only screen and (max-width: 481px) {
-    /* .logo {
-        height: 120px;
-    } */
     span {
         font-size: 1rem;
         top: 9%;
@@ -328,9 +353,6 @@ input::placeholder {
     .hud-prefix {
         font-size: 1.3rem;
     }
-    /* .game-area {
-        top: 70%;
-    } */
     .btn {
         width: 250px;
     }
@@ -352,6 +374,7 @@ input::placeholder {
 @media only screen and (max-width: 769px) {
     .logo {
         height: 180px;
+        width: 180px;
     }
     span {
         font-size: 1.5rem;
@@ -376,6 +399,7 @@ input::placeholder {
 @media only screen and (max-width: 1025px) {
     .logo {
         height: 200px;
+        width: 220px;
     }
     span {
         font-size: 1.7rem;
@@ -388,4 +412,4 @@ input::placeholder {
     .hud-prefix {
         font-size: 1.4rem;
     }
-}
+} */

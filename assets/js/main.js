@@ -34,15 +34,11 @@ const highscoresDiv = document.getElementById('high-container');
 const highScoresList = document.querySelector('#highScoresList');
 const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 
-// const question = document.querySelector('#question');
 const question = document.getElementById('question');
-// const choices = Array.from(document.querySelectorAll('.choice-text'));
 const choices = Array.from(document.getElementsByClassName('choice-text'));
-// const progressText = document.querySelector('#progressText');
-const progressText = document.getElementById('progressText');
-// const scoreText = document.querySelector('#score');
+
+const progressCounter = document.getElementById('progressCounter');
 const scoreText = document.getElementById('score');
-// const progressBarFull = document.querySelector('#progressBarFull');
 const progressBarFull = document.getElementById('progressBarFull');
 const plane = document.getElementById('plane');
 
@@ -138,7 +134,7 @@ getNewQuestion = () => {
     }
 
     questionCounter++;
-    progressText.innerText = `Question: ${questionCounter} / ${MAX_QUESTIONS}`;
+    progressCounter.innerText = `Question: ${questionCounter} / ${MAX_QUESTIONS}`;
     
     const questionsIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionsIndex];
@@ -187,7 +183,7 @@ choices.forEach(choice => {
 /*increment score for each correct answer*/
 incrementScore = num => {
     score +=num;
-    scoreText.innerText = score + 'miles travelled';
+    scoreText.innerHTML = `<span id="span-score"> ${score} miles travelled</span>`;
 };
 
 /*list to add score to highscore list*/
@@ -214,7 +210,7 @@ highscoresButton.onclick = function () {
     }
 };
 
-/*show or hide Hot To Play section*/
+/*show or hide How To Play section*/
 howToButton.onclick = function () {
     if (howToDiv.style.display !== "block") {
         howToDiv.style.display = "block";

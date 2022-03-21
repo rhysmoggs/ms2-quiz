@@ -17,7 +17,8 @@ const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
 const MAX_HIGH_SCORES = 5;
 
 // display user's final score on end screen
-finalScore.innerText = mostRecentScore + ' miles travelled';
+// finalScore.innerText = mostRecentScore + ' miles travelled';
+finalScore.innerHTML = `<span id="span-score"> ${mostRecentScore} miles travelled</span>`;
 
 // event listener added to input field, which then enables Save button
 username.addEventListener('keyup', () => {
@@ -58,4 +59,4 @@ logoReload.addEventListener("click", reloadGame);
 
 function reloadGame() {
     window.location.assign('index.html');
-}
+};
