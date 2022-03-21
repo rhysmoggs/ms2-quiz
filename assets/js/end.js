@@ -17,7 +17,6 @@ const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
 const MAX_HIGH_SCORES = 5;
 
 // display user's final score on end screen
-// finalScore.innerText = mostRecentScore + ' miles travelled';
 finalScore.innerHTML = `<span id="span-score"> ${mostRecentScore} miles travelled</span>`;
 
 // event listener added to input field, which then enables Save button
@@ -25,7 +24,7 @@ username.addEventListener('keyup', () => {
     saveScoreBtn.disabled = !username.value;
 });
 
-/*saves highscore to storage, organizes them and add only allows the highest 5*/
+/* saves high score to storage, organizes them and add only allows the highest 5 */
 saveHighScore = e => {
     e.preventDefault();
 
@@ -46,15 +45,15 @@ saveHighScore = e => {
     window.location.assign('index.html');
 };
 
-/*event listener set to the home button*/
+/* event listener set to the home button */
 homeButton.addEventListener("click", goHome);
 
-/*goes to home page*/
+/* goes to home page */
 function goHome() {
     window.location.assign('index.html');
 }
 
-/*event listener set to the logo button that reloads the home page*/
+/* event listener set to the logo button that reloads the quiz main meenu */
 logoReload.addEventListener("click", reloadGame);
 
 function reloadGame() {

@@ -1,20 +1,3 @@
-// wait for the DOM to finish loading before running the game
-// get the button elements and add event listeners to them
-// document.addEventListener("DOMContentLoaded", function() {
-//     let buttons = document.getElementsByTagName("button");
-
-//     for (let button of buttons){
-//         button.addEventListener("click", function() {
-//             if (this.getAttribute("data-type") === "start") {
-//                 alert("You clicked Start!");
-//             } else {
-//                 let buttonType = this.getAttribute("data-type");
-//                 alert(`You clicked ${buttonType}`);
-//             }
-//         });
-//     }
-// });
-
 // list of variables
 const logoReload = document.getElementById('logo');
 
@@ -43,7 +26,6 @@ const progressBarFull = document.getElementById('progressBarFull');
 const plane = document.getElementById('plane');
 
 
-/*undefined let variables*/
 let currentQuestion = {};
 let acceptingAnswers = false;
 let score = 0;
@@ -81,25 +63,23 @@ fetch(
 
             return formattedQuestion;
         });
-
-        // startGame();
     })
     .catch((err) => {
         console.error(err);
     });
 
-
+// scoring value and maximum number of questions
 const SCORE_POINTS = 2500;
 const MAX_QUESTIONS = 10;
 
-/*event listener set to the logo button that reloads the home page*/
+/* event listener set to the logo button that reload to main menu */
 logoReload.addEventListener("click", reloadGame);
 
 function reloadGame() {
     window.location.assign('index.html');
 }
 
-/*start the game*/
+/* start the game */
 startGame = () => {
     questionCounter = 0;
     score = 0;
@@ -123,10 +103,10 @@ startGame = () => {
     }
 };
 
-/*event listener set to the start button that runs the game*/
+/* event listener set to the start button that runs the game */
 startButton.addEventListener("click", startGame);
 
-/*generates next question, if max questions reached, redirects to end.html*/
+/* generates next question, if max questions reached, redirects to end.html */
 getNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
@@ -150,7 +130,7 @@ getNewQuestion = () => {
     acceptingAnswers = true;
 };
 
-/*check if the answer is correct/incorrect*/
+/* check if the answer is correct/incorrect */
 choices.forEach(choice => {
     choice.addEventListener('click', e => {
         if(!acceptingAnswers) return;
@@ -180,20 +160,20 @@ choices.forEach(choice => {
     });
 });
 
-/*increment score for each correct answer*/
+/* increment score for each correct answer */
 incrementScore = num => {
     score +=num;
     scoreText.innerHTML = `<span id="span-score"> ${score} miles travelled</span>`;
 };
 
-/*list to add score to highscore list*/
+/* list to add score to highscore list */
 highScoresList.innerHTML =
 highScores.map(score => {
     return `<p class="high-score">${score.name} - ${score.score} miles travelled</p>`;
 }).join("");
 
 
-/*show or hide High Scores section*/
+/* show or hide High Scores section */
 highscoresButton.onclick = function () {
     if (highscoresDiv.style.display !== "block") {
         highscoresDiv.style.display = "block";
@@ -210,7 +190,7 @@ highscoresButton.onclick = function () {
     }
 };
 
-/*show or hide How To Play section*/
+/* show or hide How To Play section */
 howToButton.onclick = function () {
     if (howToDiv.style.display !== "block") {
         howToDiv.style.display = "block";
@@ -227,7 +207,7 @@ howToButton.onclick = function () {
     }
 };
 
-/*show or hide Contact section*/
+/* show or hide Contact section */
 contactButton.onclick = function () {
     if (contactDiv.style.display !== "block") {
         contactDiv.style.display = "block";

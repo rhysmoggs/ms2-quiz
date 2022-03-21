@@ -152,9 +152,14 @@ Wireframes were drawn using [Balsamiq](https://balsamiq.com/) at the beginning o
 
 <img src="assets/readme-images/maps.jpg">
 
+- Logo
+
+<img src="assets/images/logo.png">
+
 - Plane
 
-- Logo
+<img src="assets/images/plane.png">
+
 
 #### Font
 -  The Globe Trotter Quiz uses the Poppins font. It provides that clean, clear style without compromising on readability - a vital design feature for any quiz. This is available for free via [Google Fonts](https://fonts.google.com/) and imported via CSS. Sans Serif is used as a secondary option in case of failure to import  the font into the quiz correctly. Poppins is a clean font used frequently in designs, so it is both attractive and appropriate.
