@@ -30,10 +30,7 @@ let acceptingAnswers = false;
 let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
-
-//with help from mentor
 let correctAnswers = 0;
-
 let questions = [];
 
 fetch(

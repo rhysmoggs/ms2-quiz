@@ -21,7 +21,7 @@ if (mostRecentScore == 25000) {
     finalScore.innerHTML = `<span id="span-score"> ${mostRecentScore} miles travelled!<br><br>You successfully travelled the world!</span>`;
   } else {
     finalScore.innerHTML = `<span id="span-score"> ${mostRecentScore} miles travelled</span>`;
-};
+}
 
 // event listener added to input field, which then enables Save button
 username.addEventListener('keyup', () => {
@@ -62,4 +62,4 @@ logoReload.addEventListener("click", reloadGame);
 
 function reloadGame() {
     window.location.assign('index.html');
-};
+}
