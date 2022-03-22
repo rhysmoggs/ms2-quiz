@@ -1,7 +1,6 @@
 // list of variables
 const logoReload = document.getElementById('logo');
 
-const gameArea = document.getElementById('game-area');
 const containerDiv = document.getElementById('container');
 
 const startButton = document.getElementById('start-btn');
@@ -79,7 +78,7 @@ function reloadGame() {
     window.location.assign('index.html');
 }
 
-/* start the game */
+/* start the quiz */
 startGame = () => {
     questionCounter = 0;
     score = 0;
@@ -87,7 +86,6 @@ startGame = () => {
     getNewQuestion();
     containerDiv.classList.remove('hide');
     startButton.classList.add('hide');
-    // gameArea.style.top = "65%";
     if (howToButton.style.display !== "block") {
         howToButton.style.display = "none";
         howToDiv.style.display = "none";
@@ -103,7 +101,7 @@ startGame = () => {
     }
 };
 
-/* event listener set to the start button that runs the game */
+/* event listener set to the start button that runs the quiz */
 startButton.addEventListener("click", startGame);
 
 /* generates next question, if max questions reached, redirects to end.html */
@@ -180,13 +178,11 @@ highscoresButton.onclick = function () {
         startButton.classList.add('hide');
         howToButton.classList.add('hide');
         contactButton.classList.add('hide');
-        gameArea.style.top = "55%";
     } else {
         highscoresDiv.style.display = "none";
         startButton.classList.remove('hide');
         howToButton.classList.remove('hide');
         contactButton.classList.remove('hide');
-        gameArea.style.top = "60%";
     }
 };
 
@@ -197,13 +193,11 @@ howToButton.onclick = function () {
         startButton.classList.add('hide');
         contactButton.classList.add('hide');
         highscoresButton.classList.add('hide');
-        gameArea.style.top = "55%";
     } else {
         howToDiv.style.display = "none";
         startButton.classList.remove('hide');
         contactButton.classList.remove('hide');
         highscoresButton.classList.remove('hide');
-        gameArea.style.top = "60%";
     }
 };
 
@@ -214,12 +208,10 @@ contactButton.onclick = function () {
         startButton.classList.add('hide');
         howToButton.classList.add('hide');
         highscoresButton.classList.add('hide');
-        gameArea.style.top = "55%";
     } else {
         contactDiv.style.display = "none";
         startButton.classList.remove('hide');
         howToButton.classList.remove('hide');
         highscoresButton.classList.remove('hide');
-        gameArea.style.top = "60%";
     }
 };

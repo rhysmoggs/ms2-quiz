@@ -8,7 +8,7 @@ This is the first interactive quiz the company has launched, announcing themselv
 
 ### Quiz premis and rules:
 
-A classic geography quiz, suitable to single or multiple players of all ages. The Globe Trotter Quiz is a multiple-choice quiz where the user is presented with 10 questions, each correct answer worth 2500 miles. The goal? To answer 10 correct answers totalling a whopping 25,000 miles - about the same distance it is tofly around the globe! See if you can travel to the top of the High Scores list!
+A classic geography quiz, suitable to single or multiple players of all ages. The Globe Trotter Quiz is a multiple-choice quiz where the user is presented with 10 questions, each correct answer worth 2500 miles. The goal? To answer 10 correct answers totalling a whopping 25,000 miles - about the same distance it is to fly around the world! See if you can travel to the top of the High Scores list!
 
 The quiz will clearly display information for new and returning customers including the creators contact information via social media links. The quiz is fully responsible on a range of devices - from hand-held devices to larger screens such as monitors or even TVs. This is to ensure that as many people as possible can play the quiz and enjoy this journey.
 
@@ -152,14 +152,13 @@ Wireframes were drawn using [Balsamiq](https://balsamiq.com/) at the beginning o
 
 <img src="assets/readme-images/maps.jpg">
 
-- Logo
+Logo
 
 <img src="assets/images/logo.png">
 
-- Plane
+Plane
 
 <img src="assets/images/plane.png">
-
 
 #### Font
 -  The Globe Trotter Quiz uses the Poppins font. It provides that clean, clear style without compromising on readability - a vital design feature for any quiz. This is available for free via [Google Fonts](https://fonts.google.com/) and imported via CSS. Sans Serif is used as a secondary option in case of failure to import  the font into the quiz correctly. Poppins is a clean font used frequently in designs, so it is both attractive and appropriate.
@@ -215,9 +214,13 @@ Each icon for the social media links turn gold when the user hovers over them to
 <img src="assets/readme-images/contact-container.png">
 <img src="assets/readme-images/contact-container-hover.png">
 
+The social media links on smaller screens (below 481px - such as mobile phones) have a more mobile-friendly layout.
+
+<img src="assets/readme-images/mobile-social-links.jpg">
+
 #### - High Scores
 
-<img src="assets/readme-images/highscore-container.png">
+<img src="assets/readme-images/highscores-container.png">
 
 #### Buttons
 
@@ -244,13 +247,13 @@ Each icon for the social media links turn gold when the user hovers over them to
 
 #### - Correct Answer Button
 
-- gold (rgb(255,210,0)) indicates a correct answer
+- Gold (rgb(255,210,0)) indicates a correct answer.
 
 <img src="assets/readme-images/button-correct.png">
 
 #### - Incorrect Answer Button
 
-- red(rgb(255,0,0)) indicates an incorrect answer
+- Red (rgb(255,0,0)) indicates an incorrect answer.
 
 <img src="assets/readme-images/button-incorrect.png">
 
@@ -310,14 +313,17 @@ The W3C Markup Validator, W3C CSS Validator and JSHint tools were used to valida
 -   [W3C Markup Validator](https://validator.w3.org/#validate_by_input)
 
 index.html
+
 <img src="assets/readme-images/validator.png">
 
 end.html
+
 <img src="assets/readme-images/validator2.png">
 
 -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
 
 style.css
+
 <img src="assets/readme-images/jigsaw.png">
 
 -   The Warnings(1), also seen on the above screenshot, references the Google imported style sheet, and that it won't check that.
@@ -326,10 +332,12 @@ style.css
 
 -   [JSHint](https://jshint.com/) 
 
-index.js
+main.js
+
 <img src="assets/readme-images/jshint.png">
 
 end.js
+
 <img src="assets/readme-images/jshint2.png">
 
 ## Testing Original User Stories
@@ -396,7 +404,11 @@ All of the following tests were repeated multiple times to ensure a fair test. T
 -   Console.log() function was used for JavaScript code development.
 -   All interactive elements of the quiz were tested. Button functions, clicking, hiding/showing content, user input, links and general flow of quiz. Bugs were fixed as they arose.
 -   Testing that the score updated correctly, incrementing on correct answers only and progressBar progression to reflect this. The same process was done for incorrect answers and various combinations of correct and incorrect answers and users input. The final score was also checked against the in-game score for accuracy and again when submitting to the High Scores area.
--   The quiz was tested on Google Chrome, Mozilla Firefox, Microsoft Edge and Opera browsers and ran efficiently and consistently on each one. The quiz looked and operated as intended.
+-   The quiz was tested on Google Chrome, Mozilla Firefox, Microsoft Edge and Opera browsers and ran efficiently on each one. There were slight stylistic differences when testing between browsers, but these were resolved afterwards. See below for an example when testing on the Opera browser:
+<img src="assets/readme-images/opera-test.png">
+To resolve this, the background-colour was specified in the style.css file, instead of allowing the browsers default styling/button colours decide. This encouraged further testing and ensuring that all important style factors were specified.
+
+
 -   The quiz was viewed on a variety of devices such as Desktop, Laptop, iPad & iPhoneX.
 -   Feedback from friends and family, testing the quiz with no prior instruction or expectations. Adjustments were made if necessary to satisfy the [User Targets](#as-a-new-user).
 
@@ -405,20 +417,29 @@ Bug fixes were predominantly completed in real-time as soon as any issues arose.
 
 -   As seen from the style.css file, there is a lot of custom CSS. Media queries were used at different breakpoints - although time consuming, it was vital to invest time into this to ensure the quiz was functioning correctly on various displays to ensure a major [User Targets](#as-a-new-user) was met. Some JavaScript tweaks were also implemented to alter the class width at different stages of the quiz e.g. the main menu, quiz itself or the end.
 
--   The main containers (see style.css classes .game-area and .container ) would either overlap or completely hide the quiz title and logo. The Globe Trotter Quiz title and logo should be on display at all times no matter what section of the quiz the user was viewing, so obviously this bug was very undesirable. This was bug was fixed in a few ways:
-    - media queries, as explained above.
-    - through adding a margin-top to push the container down and clear from the title and logo.
-    - custom JavaScript code to alter specific classes.
+-   Placed a background-colour behind the score for readability purposes as a Lighthouse test had brough up contrast issues between the gold text colour and the lighter background.
 
 -   Added rel-"noopener" to external links opening in new tabs for security purposes.
 
 ### Known Bugs
 
--   The background image (maps.jpg) repeats slightly towards the very bottom of the Surface Pro 7 (912px x 1368px) device.
+-   The background image (maps.jpg) repeats slightly towards the very bottom of the Surface Pro 7 (912px x 1368px) device. It can also do this on larger TVs or wide-display devices such as tablets.
+
+### Future Updates
+
+There are many planned updates arranged for the Globe Trotter Quiz that include but are not limited to:
+
+-   Introduction of difficulty level choices i.e. Easy, Normal, Hard.
+-   Introduction of images, linked to the questions.
+-   Sound effects and music.
+-   More questions.
+-   Theme/colour palette toggle.
+-   Timer to add more difficulty.
 
 ## Deployment
 
 ### GitHub Pages
+The following instructions are taken from Code Institute's [README.md template](https://github.com/Code-Institute-Solutions/SampleREADME/blob/master/README.md)
 
 The project was deployed to GitHub Pages using the following steps...
 
@@ -500,9 +521,3 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 -   Tutor support at Code Institute.
 
 -   codes whatever website for googling errors/help.
-
-
-
-
-
-where to put future upgrades to game? difficulty level, pictures, music/sound effects, different themes, accessibility via colour change theme on/off

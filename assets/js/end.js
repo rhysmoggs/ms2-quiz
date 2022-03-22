@@ -16,8 +16,12 @@ const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
 // maximum number of saved usernames and scores listed on High Scores list
 const MAX_HIGH_SCORES = 5;
 
-// display user's final score on end screen
-finalScore.innerHTML = `<span id="span-score"> ${mostRecentScore} miles travelled</span>`;
+// display user's final score and message on end screen
+if (mostRecentScore == 25000) {
+    finalScore.innerHTML = `<span id="span-score"> ${mostRecentScore} miles travelled!<br><br>You successfully travelled the world!</span>`;
+  } else {
+    finalScore.innerHTML = `<span id="span-score"> ${mostRecentScore} miles travelled</span>`;
+};
 
 // event listener added to input field, which then enables Save button
 username.addEventListener('keyup', () => {
